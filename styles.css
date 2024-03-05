@@ -1,12 +1,117 @@
+*{
+    margin: 0;
+}
+
+/* General Tags */
 body{
     font-family: "Roboto", sans-serif;
-
 }
 
 h1, h2, h3, h4, h5, h6, a {
+    color: #000000;
     font-weight: 900;
+    text-decoration: none;
 }
 
 p {
     font-weight: 400;
+}
+
+/* Header */
+header{
+    height: 100vh;
+    width: 65%;
+    margin: 0 auto;
+}
+/* NAV */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding: 10px;
+}
+
+nav span{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a{
+    font-size: 1.3rem;
+    padding: 12px;
+    border-radius: 25px;
+
+    &:hover, &.active{
+        color: #fff;
+        background-color: #443B91;
+    }
+}
+
+
+/* HERO */
+#hero {
+    display: flex;
+    padding: 100px 0;
+}
+
+#hero h1{
+    font-size: 3rem;
+    margin: 0 0 20px 0;
+}
+
+#hero-title, #hero-img {
+    width: 50%;
+}
+
+#hero-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#hero-title h1 span{
+    color: #443B91;
+}
+
+#hero-title a {
+    color: #fff;
+    background-color: #00AFEF;
+    padding: 15px;
+    border-radius: 25px;
+    margin: 0 0 30px 0;
+    width: fit-content;
+    transition: .2s ease-in-out;
+
+    &:hover {
+        transform: scale(1.1);
+
+    }
+}
+
+
+
+#hero-text{
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    margin: 0 0 30px 0;
+    width: 70%;
+}
+
+#hero span{
+    display: flex;
+}
+
+#hero-title span p{
+    color: #E7373D;
+    margin: 0 20px 0 0;
+}
+
+#hero span i{
+    margin: 0 10px 0 0;
+}
+
+#hero-img img{
+    height: 600px;
 }
