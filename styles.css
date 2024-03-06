@@ -217,7 +217,7 @@ nav{
 .feat-card-back{
     display: none;
     z-index: 1;
-    animation: cardflip 1s;
+    animation: cardflip .8s;
 }
 
 @keyframes cardflip {
@@ -228,6 +228,27 @@ nav{
         opacity: 1;
     }
 }
+
+.card-btn{
+    padding: 10px 15px;
+    border-radius: 25px;
+    border: solid #fff 2px;
+
+    &:hover{
+        animation: card-btn-animation .5s;
+        animation-fill-mode: forwards;
+    }
+}
+
+@keyframes card-btn-animation {
+    100%{
+        color: inherit;
+        background-color: #fff;
+    }
+}
+
+
+
 
 
 
