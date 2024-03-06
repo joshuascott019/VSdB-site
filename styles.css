@@ -22,6 +22,15 @@ p {
     --bg-color-blue: #00AFEF;
     --bg-color-red: #E7373D;
 }
+.red-bg{
+    background-color: var(--bg-color-red);
+}
+.blue-bg{
+    background-color: var(--bg-color-blue);
+}
+.purple-bg{
+    background-color: var(--bg-color-purple);
+}
 
 .red-font {
     color: #E7373D;
@@ -37,6 +46,10 @@ p {
 
 .grey-font {
     color: #7A7A7A;
+}
+
+.white-font {
+    color: #fff;
 }
 
 /* ============== HEADER SECTION ============== */
@@ -141,6 +154,8 @@ nav{
     justify-content: center;
     align-items: center;
     gap: 10px;
+    width: 45%;
+    margin: auto;
 
     & h1 {
         /* color: var(--palette-color-purple); */
@@ -148,21 +163,25 @@ nav{
     }
     & p {
         font-size: 1.5rem;
-        line-height: .8rem;
     }
 }
 
-.container-feats-span{
+.container-feat-cards-span{
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     gap: 20px;
     padding: 40px;
 }
 
 .feat-card{
     width: 20%;
+    height: fit-content;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 20px;
 
     & h3{
@@ -173,6 +192,33 @@ nav{
         font-size: 3rem;
     }
 }
+
+.flip{
+    width: 300px;
+    height: 250px;
+    position: relative;
+    & h3{
+        font-size: 1.4rem;
+    }
+}
+
+.feat-card-back, .feat-card-front{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+}
+
+.feat-card-back{
+    display: none;
+    z-index: 1;
+}
+
 
 
 
