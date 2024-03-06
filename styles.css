@@ -217,6 +217,16 @@ nav{
 .feat-card-back{
     display: none;
     z-index: 1;
+    animation: cardflip 1s;
+}
+
+@keyframes cardflip {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 
