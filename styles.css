@@ -1,8 +1,8 @@
+/* =============== GENERAL TAGS =============== */
 *{
     margin: 0;
 }
 
-/* General Tags */
 body{
     font-family: "Roboto", sans-serif;
 }
@@ -16,81 +16,66 @@ h1, h2, h3, h4, h5, h6, a {
 p {
     font-weight: 400;
 }
+/* ========== CUSTOM GLOBAL VARIABLES ========== */
+:root{
+    --palette-color-purple: #443B91;
+    --palette-color-blue: #00AFEF;
+    --palette-color-red: #E7373D;
+}
 
-/* Header */
+/* ============== HEADER SECTION ============== */
 header{
     height: 100vh;
-    width: 65%;
+    width: 70%;
     margin: 0 auto;
 }
-/* NAV */
 nav{
     display: flex;
     justify-content: space-between;
     align-items: end;
-    padding: 10px;
+    padding: 20px;
 }
 
-nav span{
+#nav-items{
     width: 40%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-nav a{
+#nav-items a{
     font-size: 1.3rem;
     padding: 12px;
     border-radius: 25px;
 
     &:hover, &.active{
         color: #fff;
-        background-color: #443B91;
+        background-color: var(--palette-color-purple);
     }
 }
 
-
-/* HERO */
 #hero {
     display: flex;
     padding: 100px 0;
 }
 
-#hero h1{
-    font-size: 3rem;
-    margin: 0 0 20px 0;
-}
-
-#hero-title, #hero-img {
+#hero-info, #hero-img {
     width: 50%;
 }
-
-#hero-title {
+#hero-info {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-#hero-title h1 span{
-    color: #443B91;
-}
-
-#hero-title a {
-    color: #fff;
-    background-color: #00AFEF;
-    padding: 15px;
-    border-radius: 25px;
-    margin: 0 0 30px 0;
+#hero-title{
+    font-size: 3rem;
+    margin: 0 0 20px 0;
     width: fit-content;
-    transition: .2s ease-in-out;
-
-    &:hover {
-        transform: scale(1.1);
-
+    & span{
+        color: var(--palette-color-purple);
     }
 }
-
-
 
 #hero-text{
     font-size: 1.5rem;
@@ -99,17 +84,29 @@ nav a{
     width: 70%;
 }
 
-#hero span{
+#hero-know-more-btn {
+    color: #fff;
+    background-color: var(--palette-color-blue);
+    padding: 15px;
+    border-radius: 25px;
+    margin: 0 0 30px 0;
+    width: fit-content;
+    transition: .2s ease-in-out;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+#hero-details{
+    color: var(--palette-color-red);
     display: flex;
-}
+    gap: 5px;
+    width: fit-content;
 
-#hero-title span p{
-    color: #E7373D;
-    margin: 0 20px 0 0;
-}
-
-#hero span i{
-    margin: 0 10px 0 0;
+    & p{
+        margin-right: 10px;
+    }
 }
 
 #hero-img img{
