@@ -162,6 +162,7 @@ nav{
     }
     & p {
         font-size: 1.5rem;
+        width: 45%;
     }
 }
 
@@ -243,6 +244,15 @@ nav{
     100%{
         color: inherit;
         background-color: #fff;
+    }
+}
+
+#second-container{
+    position: relative;
+    & img {
+        position: absolute;
+        left: 50px;
+        bottom: -10px;
     }
 }
 
