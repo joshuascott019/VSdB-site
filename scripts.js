@@ -1,8 +1,8 @@
-const flippableCard = document.querySelectorAll('.flip')
+const flipCard = document.querySelectorAll('.flip')
 const cardBack = document.querySelectorAll('.feat-card-back')
 const cardFront = document.querySelectorAll('.feat-card-front')
 
-flippableCard.forEach((card)=>{
+flipCard.forEach((card)=>{
     card.addEventListener('mouseenter', ()=>{
         card.firstElementChild.style.display = 'flex'
     })

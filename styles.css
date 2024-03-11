@@ -84,8 +84,7 @@ nav {
   padding: 12px;
   border-radius: 25px;
 
-  &:hover,
-  &.active {
+  &:hover, &.active{
     color: #fff;
     background-color: var(--bg-color-purple);
   }
