@@ -219,7 +219,7 @@ nav {
   }
 }
 
-.flip {
+.flip-element {
   width: 300px;
   height: 250px;
   position: relative;
@@ -228,8 +228,8 @@ nav {
   }
 }
 
-.feat-card-back,
-.feat-card-front {
+.alternate-element,
+.initial-element {
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -241,7 +241,7 @@ nav {
   border-radius: 25px;
 }
 
-.feat-card-back {
+.alternate-element {
   display: none;
   z-index: 1;
   animation: cardflip 0.8s;

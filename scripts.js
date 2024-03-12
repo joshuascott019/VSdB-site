@@ -1,12 +1,12 @@
-const flipCard = document.querySelectorAll('.flip')
-const cardBack = document.querySelectorAll('.feat-card-back')
-const cardFront = document.querySelectorAll('.feat-card-front')
+const flipElement = document.querySelectorAll('.flip-element')
+const altEl = document.querySelectorAll('.alternate-element')
+const initialEl = document.querySelectorAll('.initial-element')
 
-flipCard.forEach((card)=>{
-    card.addEventListener('mouseenter', ()=>{
-        card.firstElementChild.style.display = 'flex'
+flipElement.forEach((element)=>{
+    element.addEventListener('mouseenter', ()=>{
+        element.firstElementChild.style.display = 'flex'
     })
-    card.addEventListener('mouseleave', ()=>{
-        card.firstElementChild.style.display = 'none'
+    element.addEventListener('mouseleave', ()=>{
+        element.firstElementChild.style.display = 'none'
     })
 })
