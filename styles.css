@@ -84,11 +84,11 @@ nav {
   border-radius: 25px;
   margin: 12px;
 
-  &.purple-fill-animation:hover{
+  &.purple-fill-animation:hover, &.purple-fill-animation.active{
     animation: purple-nav-fill-animation .3s;
     animation-fill-mode: forwards;
   }
-  &.blue-fill-animation:hover{
+  &.blue-fill-animation:hover, &.blue-fill-animation.active{
     animation: blue-nav-fill-animation .3s;
     animation-fill-mode: forwards;
   }
@@ -114,6 +114,9 @@ nav {
 #hero {
   display: flex;
   padding: 100px 0;
+  &.hidden{
+    display: none;
+  }
 }
 
 #hero-info,
@@ -180,7 +183,16 @@ nav {
   z-index: -1;
 }
 
+/* ========================================== */
 /* ============== MAIN SECTION ============== */
+/* ========================================== */
+main.hidden{
+  display: none;
+}
+
+/* ================ NOVO PAGE ================ */
+
+
 .container {
   text-align: center;
   width: 100%;

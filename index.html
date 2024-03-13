@@ -28,11 +28,11 @@
       <nav>
         <img src="images/OLD/nav-logo.png" alt="" />
         <span id="nav-items">
-          <a href="#" class="blue-fill-animation">novo</a>
-          <a href="#" class="purple-fill-animation">início</a>
-          <a href="#" class="purple-fill-animation">contato</a>
-          <a href="#" class="purple-fill-animation">sobre</a>
-          <a href="#" class="purple-fill-animation">FAQ</a>
+          <a href="#" class="nav-item blue-fill-animation">novo</a>
+          <a href="#" class="nav-item purple-fill-animation active">início</a>
+          <a href="#" class="nav-item purple-fill-animation">contato</a>
+          <a href="#" class="nav-item purple-fill-animation">sobre</a>
+          <a href="#" class="nav-item purple-fill-animation">FAQ</a>
         </span>
       </nav>
       <div id="hero">
@@ -65,53 +65,32 @@
       </div>
     </header>
 
-    <main>
-      <!-- CARD TEMPLATE -->
-      <!-- 
-        <div class="container">
-            <div class="container-intro">
-                <h1 class=""></h1>
-                <p><strong></strong></p>
-            </div>
-            <div class="container-feats-span">
-                <div class="feat-card">
-                    <i class=""></i>
-                    <h3 class=""></h3>
-                    <p class=""></p>
-                </div>
-            </div>
-        </div> -->
-
-      <!-- CARD W/ FLIP & BTN TEMPLATE -->
-      <!-- 
-        <div class="feat-card flip">
-            <div class="feat-card-back BGCOLOR BTNFONTCOLOR">
-                <h3 class="FONTCOLOR">TITLE</h3>
-                <p class="FONTCOLOR">PARAGRAPH</p>
-                <a href="#" class="card-btn FONTCOLOR">saiba mais</a>
-            </div>
-            <div class="feat-card-front">
-                <i class="fa-solid fa-circle-dot FONTCOLOR"></i>
-                <h3 class="FONTCOLOR">TITLE</h3>
-                <p class="FONTCOLOR">PARAGRAPH</p>
-            </div>
-        </div> 
-        -->
-
-      <!-- CONTAINER W/ INTRO & CARD SPAN -->
-      <!-- 
-        <div class="container">
-            <div class="container-intro">
-                <h1 class="FONTCOLOR">TITLE</h1>
-                <p>PARAGRAPH <strong>PARAGRAPH</strong> PARAGRAPH</p>
-            </div>
-
-            <div class="container-feat-cards-span">
-
-            </div>
+    <main id="novo" class="hidden">
+      <h1>Novos módulos,<br>novas atualizações...</h1>
+      <p>Conheça os nossos <strong>softwares de gestão
+      </strong> para a sua farmácia de manipulação:</p>
+      <div id="novos-feat-list">
+        <div>
+          <div><img src="images/placeholder.jpg" alt=""></div>
+          <div><h3>VS<span class="blue-font">Cloud:</span></h3><p>Seu VSFarmácia em nuvem.</p></div>
         </div>
-         -->
+        <div>
+          <div><img src="images/placeholder.jpg" alt=""></div>
+          <div><h3>VS<span class="blue-font">Print:</span></h3><p>Imprima relatórios, fichas de pesagem e rótulos em qualquer lugar.</p></div>
+        </div>
+        <div>
+          <div><img src="images/placeholder.jpg" alt=""></div>
+          <div><h3>VS<span class="blue-font">Dashboard:</span></h3><p>Acompanhe dashboards e gráficos ne web, PC e celular.</p></div>
+        </div>
+        <div>
+          <div><img src="images/placeholder.jpg" alt=""></div>
+          <div><h3>VS<span class="blue-font">IA:</span></h3><p>Atenda seu cliente por IA.</p></div>
+        </div>
+        <h1>Entre em contato conosco e peça uma demonstração.</h1>
+      </div>
+    </main>
 
+    <main id="inicio" class="">
       <div class="container">
         <div class="container-intro">
           <h1 class="purple-font">O que você pode customizar?</h1>
@@ -595,6 +574,57 @@
         </div>
         <div id="contact-img">
             <img src="images/Site VitoriaSoft novas imagens-05.png" alt="">
+        </div>
+      </div>
+    </main>
+
+    <main id="contato">
+      <div id="contact-form-container" class="container">
+        <div id="contact-form">
+            <div class="container-intro">
+                <h1 class="purple-font">Quer falar com a gente?</h1>
+                <p>A mensagem abaixo é enviada direto para o nosso e-mail.</p>
+            </div>
+            <form action="">
+                <input type="text" placeholder="Nome" required>
+                <input type="email" placeholder="E-mail" required>
+                <input type="number" placeholder="Se preferir receber uma ligação, deixe seu telefone" required>
+                <label for="">Escreva sua mensagem abaixo:
+                    <textarea name="" id="" cols="100" rows="1" required></textarea>
+                </label>
+                <button id="submit-btn" type="submit" class="white-font red-bg">
+                  <i class="fa-solid fa-envelope"></i> <strong>ENVIAR</strong>
+                </button>
+            </form>
+        </div>
+        <div id="contact-img">
+            <img src="images/Site VitoriaSoft novas imagens-05.png" alt="">
+        </div>
+      </div>
+
+    </main>
+
+    <main id="sobre" class="hidden">
+      <div id="sobre-text">
+        <h1>1988: Espírito Santo</h1>
+        <h1>2021: alcance nacional</h1>
+        <p>A VitóriaSoft do Brasil surgiu em Vitória, consolidada em casa e lastreada em produtos de qualidade, se lançou nacionalmente em 2000, a partir de sua presença expressiva na décima-primeira edição da Racine Expo, feira especializada voltada ao segmento de farmácias, realizada em São Paulo.</p>
+        <p>Uma ação que tem mostrado enorme sucesso, pois os produtos da VitóriaSoft do Brasil estão rodando hoje em centenas de clientes instalados nas capitais e nas mais importantes cidades localizadas de Norte a Sul e de Leste a Oeste do nosso Brasil.</p>
+      </div>
+      <div id="sobre-img">
+        <img src="images/OLD/sobre-img.png" alt="">
+      </div>
+    </main>
+
+    <main id="faqs" class="hidden">
+      <h1 class="purple-font">Dúvidas frequentes</h1>
+      <p>Se não encontrar a resposta que você procura, por favor, entre em contato!</p>
+      <div id="faq-container">
+        <div class="faq">
+          <button class="faq-toggle">
+            <i class="fa-solid fa-caret-right"></i>
+            <i class="fa-solid fa-caret-up"></i>
+          </button>
         </div>
       </div>
     </main>
