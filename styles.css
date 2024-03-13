@@ -3,7 +3,7 @@
   margin: 0;
 }
 
-body {
+body, button {
   font-family: "Roboto", sans-serif;
   /* overflow-x: hidden; */
 }
@@ -228,6 +228,78 @@ main.hidden{
   margin-right: 30px;
 }
 
+/* ================= SOBRE PAGE ================= */
+#sobre-content{
+  width: 70%;
+  margin: -50px auto 75px;
+  display: flex;
+}
+#sobre-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: start;
+  & h1{
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  & p{
+    font-size: 1.4rem;
+    line-height: 1.8em;
+  }
+}
+
+/* ================= FAQ PAGE ================= */
+main#faqs{
+  width: 65%;
+  margin: auto;
+}
+
+#faq-container{
+  width: 65%;
+  margin: 50px 0;
+}
+
+.faq{
+  margin: 20px 10px;
+  & p{
+    margin: 30px 0;
+  }
+}
+
+.faq-toggle{
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  background-color: rgba(255, 255, 255, 0);
+  color: var(--bg-color-purple);
+  & h3{
+    margin-left: 10px;
+    color: var(--bg-color-purple);
+  }
+  &.active{
+    color: var(--bg-color-red);
+    & h3{
+      color: var(--bg-color-red);
+    }
+    & i{
+      transform: rotate(-90deg);
+    }
+  }
+}
+
+.faq-text{
+  text-align: left;
+  display: none;
+  &.active{
+    display: block;
+  }
+}
+
+
+/* ================= INICIO PAGE & GENERAL ================= */
 .container {
   text-align: center;
   width: 100%;

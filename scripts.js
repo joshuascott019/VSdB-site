@@ -5,11 +5,19 @@ const inicioEl = document.getElementById("inicio");
 const contatoEl = document.getElementById('contato')
 const sobreEl = document.getElementById("sobre");
 const faqsEl = document.getElementById("faqs");
+const faqToggle = document.querySelectorAll('.faq-toggle')
 const flipCard = document.querySelectorAll(".flip");
 const cardBack = document.querySelectorAll(".feat-card-back");
 const cardFront = document.querySelectorAll(".feat-card-front");
 
-const pages = [heroEl, novoEl, inicioEl, contatoEl, sobreEl, faqsEl];
+const pages = [
+  heroEl, 
+  novoEl, 
+  inicioEl, 
+  contatoEl, 
+  sobreEl, 
+  faqsEl
+];
 
 flipCard.forEach((card) => {
   card.addEventListener("mouseenter", () => {
@@ -60,3 +68,10 @@ navItems.forEach((item) => {
     }
   });
 });
+
+faqToggle.forEach((toggle)=>{
+  toggle.addEventListener('click', (e)=>{
+    e.target.parentElement.classList.toggle('active')
+    e.target.parentElement.parentElement.children[1].classList.toggle('active')
+  })
+})
