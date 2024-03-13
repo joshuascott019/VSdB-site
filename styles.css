@@ -253,11 +253,21 @@ main.hidden{
 main#faqs{
   width: 65%;
   margin: auto;
+  & h1{
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+}
+#faqs-subtitle{
+  font-size: 1.5rem;
 }
 
 #faq-container{
   width: 65%;
-  margin: 50px 0;
+  margin: 75px 0;
+  & hr{
+    opacity: .2;
+  }
 }
 
 .faq{
