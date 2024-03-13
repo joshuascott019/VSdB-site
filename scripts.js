@@ -72,6 +72,12 @@ navItems.forEach((item) => {
 faqToggle.forEach((toggle)=>{
   toggle.addEventListener('click', (e)=>{
     e.target.parentElement.classList.toggle('active')
-    e.target.parentElement.parentElement.children[1].classList.toggle('active')
+    let text = e.target.parentElement.parentElement.children[1]
+    text.classList.toggle('active')
+    if (text.style.maxHeight) {
+      text.style.maxHeight = null;
+    } else {
+      text.style.maxHeight = text.scrollHeight + "px";
+    }
   })
 })
