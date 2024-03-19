@@ -3,7 +3,8 @@
   margin: 0;
 }
 
-body, button {
+body,
+button {
   font-family: "Roboto", sans-serif;
   /* overflow-x: hidden; */
 }
@@ -84,18 +85,20 @@ nav {
   border-radius: 25px;
   margin: 12px;
 
-  &.purple-fill-animation:hover, &.purple-fill-animation.active{
-    animation: purple-nav-fill-animation .3s;
+  &.purple-fill-animation:hover,
+  &.purple-fill-animation.active {
+    animation: purple-nav-fill-animation 0.3s;
     animation-fill-mode: forwards;
   }
-  &.blue-fill-animation:hover, &.blue-fill-animation.active{
-    animation: blue-nav-fill-animation .3s;
+  &.blue-fill-animation:hover,
+  &.blue-fill-animation.active {
+    animation: blue-nav-fill-animation 0.3s;
     animation-fill-mode: forwards;
   }
 }
 
 @keyframes purple-nav-fill-animation {
-  100%{
+  100% {
     color: #fff;
     background-color: var(--bg-color-purple);
     padding: 12px;
@@ -103,7 +106,7 @@ nav {
   }
 }
 @keyframes blue-nav-fill-animation {
-  100%{
+  100% {
     color: #fff;
     background-color: var(--bg-color-blue);
     padding: 12px;
@@ -114,7 +117,7 @@ nav {
 #hero {
   display: flex;
   padding: 100px 0;
-  &.hidden{
+  &.hidden {
     display: none;
   }
 }
@@ -180,119 +183,203 @@ nav {
 }
 
 /*============== WHATSAPP WIDGET============== */
-#whatsapp-widget{
-  position: fixed;
-  right: 25px;
-  bottom: 25px;
-  & i{
-    color: #fff;
-    background-color: #00d084;
-    border-radius: 100%;
-    font-size: 2.8rem;
-    padding: 10px 12px;
-    cursor: pointer;
+#whatsapp-widget {
+  display: none;
+  &.active{
+    opacity: 1;
+    display: block;
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    height: 300px;
+    width: 25%;
+    background-color: #7bdcb5;
+    border-radius: 40px;
+    overflow: hidden;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    z-index: 2;
   }
+}
+#whatsapp-widget-header {
+  width: 100%;
+  height: 25%;
+  background-color: #25d366;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  & h3 {
+    color: #fff;
+    width: 80%;
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    & i {
+      font-size: 2.5rem;
+      margin-right: 5px;
+    }
+  }
+  & .fa-x {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+  }
+}
+#whatsapp-widget-chat {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.96);
+  & .chat-bubble {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-color: #fff;
+    width: 80%;
+    height: 50px;
+    border-radius: 0px 25px 25px 25px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    transform: translate(-50%, -50%);
+    & p {
+      color: rgba(0, 0, 0, 0.8);
+      font-size: 1.1rem;
+      line-height: 1.5em;
+    }
+  }
+}
+#whatsapp-send-button, #whatsapp-widget-button {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: #fff;
+  background-color: #25d366;
+  border-radius: 50px;
+  font-size: 1.3rem;
+  padding: 10px 12px;
+  cursor: pointer;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  & i{
+    font-size: 2.8rem;
+  }
+  &:hover {
+    background-color: rgba(37, 211, 102, 0.6);
+  }
+}
+#whatsapp-widget-button{
+  position: fixed;
+  right: 35px;
+  bottom: 35px;
+  z-index: 1;
 }
 
 /* ========================================== */
 /* ============== MAIN SECTION ============== */
 /* ========================================== */
-main.hidden{
+main.hidden {
   display: none;
 }
 
 /* ================ NOVO PAGE ================ */
-#novo{
+#novo {
   width: 70%;
   margin: 150px auto 200px;
-  & h1{
+  & h1 {
     font-size: 3rem;
     margin-top: 100px;
   }
-  & h3{
+  & h3 {
     font-size: 2.5rem;
     font-weight: 400;
     line-height: 1em;
   }
-  & small{
+  & small {
     font-size: 1.8rem;
-    line-height: .9rem;
+    line-height: 0.9rem;
   }
-  & p{
+  & p {
     font-size: 1.5rem;
     width: 60%;
     line-height: 1.5em;
     margin: 10px 0 100px 0;
   }
 }
-#novos-feat-list{
+#novos-feat-list {
   display: flex;
   flex-direction: column;
   justify-content: start;
   gap: 30px;
 }
-.novos-feat, .novos-feat-text{
+.novos-feat,
+.novos-feat-text {
   display: flex;
   align-items: center;
 }
-#novos-feat-list img{
-  height: 75px;
+#novos-feat-list img {
+  height: 55px;
   margin-right: 30px;
 }
-#novos-bottom-text{
+#novos-bottom-text {
   margin-top: 100px;
 }
 
 /* ================= SOBRE PAGE ================= */
-#sobre-content{
+#sobre-content {
   width: 70%;
   margin: -50px auto 75px;
   display: flex;
 }
-#sobre-text{
+#sobre-text {
   display: flex;
   flex-direction: column;
   justify-content: end;
   align-items: start;
-  & h1{
+  & h1 {
     font-size: 3rem;
     margin-bottom: 55px;
   }
-  & p{
+  & p {
     font-size: 1.4rem;
     line-height: 1.8em;
   }
 }
 
 /* ================= FAQ PAGE ================= */
-main#faqs{
+main#faqs {
   width: 65%;
   margin: 150px auto 0;
-  & h1{
+  & h1 {
     font-size: 3rem;
     margin-bottom: 10px;
   }
 }
-#faqs-subtitle{
+#faqs-subtitle {
   font-size: 1.5rem;
 }
 
-#faq-container{
+#faq-container {
   width: 65%;
   margin: 75px 0;
-  & hr{
-    opacity: .2;
+  & hr {
+    opacity: 0.2;
   }
 }
 
-.faq{
+.faq {
   margin: 30px 0 0 10px;
-  & p{
+  & p {
     margin: 30px 0 0 0;
   }
 }
 
-.faq-toggle{
+.faq-toggle {
   text-align: left;
   display: flex;
   justify-content: center;
@@ -300,32 +387,31 @@ main#faqs{
   border: 0;
   background-color: rgba(255, 255, 255, 0);
   color: var(--bg-color-purple);
-  & h3{
+  & h3 {
     margin-left: 10px;
     color: var(--bg-color-purple);
   }
-  &.active{
+  &.active {
     color: var(--bg-color-red);
-    & h3{
+    & h3 {
       color: var(--bg-color-red);
     }
-    & i{
+    & i {
       transform: rotate(-90deg);
     }
   }
 }
 
-.faq-text{
+.faq-text {
   text-align: left;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-  &.active{
+  &.active {
     display: block;
     margin-bottom: 30px;
   }
 }
-
 
 /* ================= INICIO PAGE & GENERAL ================= */
 .container {
@@ -381,7 +467,7 @@ main#faqs{
   & i {
     font-size: 3rem;
   }
-  & p{
+  & p {
     width: 80%;
   }
 }
@@ -486,7 +572,7 @@ main#faqs{
       width: 100%;
       height: 40px;
       font-size: 1rem;
-      color: rgba(0, 0, 0, .6);
+      color: rgba(0, 0, 0, 0.6);
       padding-left: 10px;
       border-radius: 5px;
       border: 1px solid black;
@@ -496,8 +582,8 @@ main#faqs{
       height: 40px;
       font-size: 1rem;
     }
-    & label{
-        color: rgba(0, 0, 0, .6);
+    & label {
+      color: rgba(0, 0, 0, 0.6);
     }
   }
   & button {

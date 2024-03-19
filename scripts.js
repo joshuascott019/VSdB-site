@@ -9,6 +9,9 @@ const faqToggle = document.querySelectorAll('.faq-toggle')
 const flipCard = document.querySelectorAll(".flip");
 const cardBack = document.querySelectorAll(".feat-card-back");
 const cardFront = document.querySelectorAll(".feat-card-front");
+const whatsappBtn = document.getElementById('whatsapp-widget-button')
+const whatsappCloseBtn = document.getElementById('whatsapp-close-btn')
+const whatsappWidget = document.getElementById('whatsapp-widget')
 
 const pages = [
   heroEl, 
@@ -81,3 +84,13 @@ faqToggle.forEach((toggle)=>{
     }
   })
 })
+
+whatsappBtn.addEventListener('click', ()=>{
+  whatsappWidget.classList.add('active')
+})
+whatsappCloseBtn.addEventListener('click', ()=>{
+  whatsappWidget.classList.remove('active')
+})
+
+
+
