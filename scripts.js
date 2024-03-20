@@ -87,9 +87,11 @@ faqToggle.forEach((toggle)=>{
 
 whatsappBtn.addEventListener('click', ()=>{
   whatsappWidget.classList.add('active')
+  whatsappBtn.classList.toggle('active')
 })
 whatsappCloseBtn.addEventListener('click', ()=>{
   whatsappWidget.classList.remove('active')
+  whatsappBtn.classList.remove('active')
 })
 
 
