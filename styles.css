@@ -185,7 +185,7 @@ nav {
 /*============== WHATSAPP WIDGET============== */
 #whatsapp-widget {
   opacity: 0;
-  transition: all 0.5s linear;
+  transition: all 0.3s linear;
   position: fixed;
   right: 25px;
   bottom: 25px;
@@ -235,7 +235,6 @@ nav {
   height: 100%;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.96);
-  z-index: 1;
   & .chat-bubble {
     position: absolute;
     left: 50%;
@@ -254,48 +253,57 @@ nav {
     }
   }
 }
-#whatsapp-send-button {
-  width: 150px;
-  z-index: 3;
+#whatsapp-widget-button{
+  position: fixed;
+  bottom: 35px;
+  right: 35px;
+  height: 50px;
+  width: 50px;
   background-color: #25d366;
-}
-#whatsapp-send-button,
-#whatsapp-widget-button {
-  position: absolute;
-  right: 10px;
-  bottom: 10px;
-  display: flex;
-  justify-content: end;
-  align-items: center;
-  gap: 20px;
-  color: #fff;
   border-radius: 50px;
-  font-size: 1.3rem;
-  padding: 10px 12px;
-  cursor: pointer;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-  & i {
-    font-size: 2.8rem;
-  }
-  &:hover {
+  padding: 10px;
+  cursor: pointer;
+  z-index: 5;
+  overflow: hidden;
+  transition: all .3s linear;
+  &:hover{
     background-color: rgba(37, 211, 102, 0.6);
   }
-}
-#whatsapp-widget-button {
-  position: fixed;
-  right: 35px;
-  bottom: 35px;
-  background-color: #25d366;
-  z-index: 1;
-  transition: all 0.5s linear;
-  &.active {
+  &.active{
     padding: 10px 12px 10px 126px;
-    transition: all 0.2s linear;
-    & i{
-      opacity: 0;
-    }
   }
 }
+#open-chat-button, #open-widget-button{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  color: #fff;
+  font-size: 1.3rem;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  gap: 15px;
+  & i{
+    font-size: 2.8rem;
+  }
+  &.active{
+    display: flex;
+    animation: fade-in .5s ease-in;
+  }
+}
+@keyframes fade-in {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
 
 /* ========================================== */
 /* ============== MAIN SECTION ============== */

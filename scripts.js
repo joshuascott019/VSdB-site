@@ -9,9 +9,11 @@ const faqToggle = document.querySelectorAll('.faq-toggle')
 const flipCard = document.querySelectorAll(".flip");
 const cardBack = document.querySelectorAll(".feat-card-back");
 const cardFront = document.querySelectorAll(".feat-card-front");
-const whatsappBtn = document.getElementById('whatsapp-widget-button')
-const whatsappCloseBtn = document.getElementById('whatsapp-close-btn')
 const whatsappWidget = document.getElementById('whatsapp-widget')
+const whatsappCloseBtn = document.getElementById('whatsapp-close-btn')
+const whatsappWidgetBtn = document.getElementById('whatsapp-widget-button')
+const openWidgetBtn = document.getElementById('open-widget-button')
+const openChatBtn = document.getElementById('open-chat-button')
 
 const pages = [
   heroEl, 
@@ -85,13 +87,17 @@ faqToggle.forEach((toggle)=>{
   })
 })
 
-whatsappBtn.addEventListener('click', ()=>{
+whatsappWidgetBtn.addEventListener('click', ()=>{
+  whatsappWidgetBtn.classList.add('active')
+  openWidgetBtn.classList.remove('active')
   whatsappWidget.classList.add('active')
-  whatsappBtn.classList.toggle('active')
+  openChatBtn.classList.add('active')
 })
 whatsappCloseBtn.addEventListener('click', ()=>{
+  whatsappWidgetBtn.classList.remove('active')
+  openWidgetBtn.classList.add('active')
   whatsappWidget.classList.remove('active')
-  whatsappBtn.classList.remove('active')
+  openChatBtn.classList.remove('active')
 })
 
 
