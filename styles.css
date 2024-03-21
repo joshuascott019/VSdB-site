@@ -183,6 +183,23 @@ nav {
 }
 
 /*============== WHATSAPP WIDGET============== */
+#whatsapp{
+  position: fixed;
+  animation: whatsapp-load 5s;
+}
+@keyframes whatsapp-load {
+  0%{
+    opacity: 0;
+  }
+  80%{
+    opacity: 0;
+  }
+  90%{
+  }
+  100%{
+    opacity: 1;
+  }
+}
 #whatsapp-widget {
   opacity: 0;
   transition: all 0.3s linear;
@@ -268,10 +285,22 @@ nav {
   overflow: hidden;
   transition: all .3s linear;
   &:hover{
-    background-color: rgba(37, 211, 102, 0.6);
+    background-color: #34fd7e;
   }
   &.active{
     padding: 10px 12px 10px 126px;
+  }
+  animation: whatsapp-load-button 5s;
+}
+@keyframes whatsapp-load-button {
+  80%{
+    transform: scale(.1);
+  }
+  90%{
+    transform: scale(1.2);
+  }
+  100%{
+    transform: scale(1);
   }
 }
 #open-chat-button, #open-widget-button{
