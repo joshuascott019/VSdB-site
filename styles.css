@@ -80,7 +80,8 @@ nav {
   align-items: center;
 }
 
-#nav-items a {
+#nav-items a,
+#mobile-nav-items a {
   font-size: 1.3rem;
   border-radius: 25px;
   margin: 12px;
@@ -113,6 +114,48 @@ nav {
     margin: 0;
   }
 }
+
+/*=============== MOBILE NAV MENU=============== */
+#mobile-nav {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: end;
+  z-index: 15;
+  /* margin: 20px 16% 0 0; */
+  & #menu-button{
+    font-size: 2.5rem;
+    color: var(--bg-color-purple);
+    margin: 20px 16% 0 0;
+    cursor: pointer;
+    &.active{
+      color: #fff;
+    }
+  }
+  & #mobile-nav-items {
+    display: none;
+    flex-direction: column;
+    justify-content: start;
+    align-items: end;
+    gap: 30px;
+    color: #fff;
+    margin: 20px 16% 0 0;
+    &.active{
+      display: flex;
+    }
+  }
+  &.active{
+    background-color: #443b9180;
+  }
+}
+
+/* ================ HERO SECTION ================ */
 
 #hero {
   display: flex;
@@ -183,20 +226,20 @@ nav {
 }
 
 /*============== WHATSAPP WIDGET============== */
-#whatsapp{
+#whatsapp {
   position: fixed;
   animation: whatsapp-load 5s;
 }
 @keyframes whatsapp-load {
-  0%{
+  0% {
     opacity: 0;
   }
-  80%{
+  80% {
     opacity: 0;
   }
-  90%{
+  90% {
   }
-  100%{
+  100% {
     opacity: 1;
   }
 }
@@ -270,7 +313,7 @@ nav {
     }
   }
 }
-#whatsapp-widget-button{
+#whatsapp-widget-button {
   position: fixed;
   bottom: 35px;
   right: 35px;
@@ -283,27 +326,28 @@ nav {
   cursor: pointer;
   z-index: 5;
   overflow: hidden;
-  transition: all .3s linear;
-  &:hover{
+  transition: all 0.3s linear;
+  &:hover {
     background-color: #34fd7e;
   }
-  &.active{
+  &.active {
     padding: 10px 12px 10px 126px;
   }
   animation: whatsapp-load-button 5s;
 }
 @keyframes whatsapp-load-button {
-  80%{
-    transform: scale(.1);
+  80% {
+    transform: scale(0.1);
   }
-  90%{
+  90% {
     transform: scale(1.2);
   }
-  100%{
+  100% {
     transform: scale(1);
   }
 }
-#open-chat-button, #open-widget-button{
+#open-chat-button,
+#open-widget-button {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -316,23 +360,22 @@ nav {
   align-items: center;
   border-radius: 50px;
   gap: 15px;
-  & i{
+  & i {
     font-size: 2.8rem;
   }
-  &.active{
+  &.active {
     display: flex;
-    animation: fade-in .5s ease-in;
+    animation: fade-in 0.5s ease-in;
   }
 }
 @keyframes fade-in {
-  0%{
+  0% {
     opacity: 0;
   }
-  100%{
+  100% {
     opacity: 1;
   }
 }
-
 
 /* ========================================== */
 /* ============== MAIN SECTION ============== */
@@ -688,3 +731,37 @@ footer {
     }
   }
 }
+
+
+
+
+/* DESKTOP SCREENS */
+@media (min-width: 1201px) {
+  #mobile-nav{
+    display: none;
+  }
+}
+
+
+/* LAPTOP SCREENS */
+@media (max-width: 1200px) {
+  #nav-items{
+    display: none;
+  }
+  #whatsapp{
+    display: none;
+  }
+}
+
+
+/* TABLET SCREENS */
+@media (max-width: 768px) {
+
+}
+
+
+/* MOBILE SCREENS */
+@media (max-width: 576px) {
+
+}
+

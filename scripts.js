@@ -14,6 +14,9 @@ const whatsappCloseBtn = document.getElementById('whatsapp-close-btn')
 const whatsappWidgetBtn = document.getElementById('whatsapp-widget-button')
 const openWidgetBtn = document.getElementById('open-widget-button')
 const openChatBtn = document.getElementById('open-chat-button')
+const mobileNav = document.getElementById('mobile-nav')
+const mobileNavMenu = document.getElementById('mobile-nav-items')
+const mobileMenuBtn = document.getElementById('menu-button')
 
 const pages = [
   heroEl, 
@@ -35,13 +38,18 @@ flipCard.forEach((card) => {
 
 navItems.forEach((item) => {
   item.addEventListener("click", (e) => {
-    console.log(e.target.innerText);
+    // console.log(e.target.innerText);
     switch (e.target.innerText) {
       case "novo":
         pages.forEach((page) => page.classList.add("hidden"));
         navItems.forEach((item) => item.classList.remove("active"));
         novoEl.classList.remove("hidden");
         e.target.classList.add("active");
+        if(mobileMenuBtn.classList.value === 'active'){
+          mobileNav.classList.remove('active')
+          mobileNavMenu.classList.remove('active')
+          mobileMenuBtn.classList.remove('active')
+        }
         break;
       case "início":
         pages.forEach((page) => page.classList.add("hidden"));
@@ -49,27 +57,47 @@ navItems.forEach((item) => {
         heroEl.classList.remove("hidden");
         inicioEl.classList.remove("hidden");
         e.target.classList.add("active");
+        if(mobileMenuBtn.classList.value === 'active'){
+          mobileNav.classList.remove('active')
+          mobileNavMenu.classList.remove('active')
+          mobileMenuBtn.classList.remove('active')
+        }
         break;
         case "contato":
           pages.forEach((page)=> page.classList.add('hidden'))
           navItems.forEach((item) => item.classList.remove("active"));
           contatoEl.classList.remove('hidden')
           e.target.classList.add("active");
+          if(mobileMenuBtn.classList.value === 'active'){
+            mobileNav.classList.remove('active')
+            mobileNavMenu.classList.remove('active')
+            mobileMenuBtn.classList.remove('active')
+          }
           break;
       case "sobre":
         pages.forEach((page) => page.classList.add("hidden"));
         navItems.forEach((item) => item.classList.remove("active"));
         sobreEl.classList.remove("hidden");
         e.target.classList.add("active");
+        if(mobileMenuBtn.classList.value === 'active'){
+          mobileNav.classList.remove('active')
+          mobileNavMenu.classList.remove('active')
+          mobileMenuBtn.classList.remove('active')
+        }
         break;
       case "FAQ":
         pages.forEach((page) => page.classList.add("hidden"));
         navItems.forEach((item) => item.classList.remove("active"));
         faqsEl.classList.remove("hidden");
         e.target.classList.add("active");
+        if(mobileMenuBtn.classList.value === 'active'){
+          mobileNav.classList.remove('active')
+          mobileNavMenu.classList.remove('active')
+          mobileMenuBtn.classList.remove('active')
+        }
         break;
       default:
-        console.log("ERROR");
+        // console.log("ERROR");
     }
   });
 });
@@ -98,6 +126,18 @@ whatsappCloseBtn.addEventListener('click', ()=>{
   openWidgetBtn.classList.add('active')
   whatsappWidget.classList.remove('active')
   openChatBtn.classList.remove('active')
+})
+
+mobileMenuBtn.addEventListener('click', ()=>{
+  if(mobileMenuBtn.classList.value === 'active'){
+    mobileNav.classList.remove('active')
+    mobileNavMenu.classList.remove('active')
+    mobileMenuBtn.classList.remove('active')
+  } else {
+    mobileNav.classList.add('active')
+    mobileNavMenu.classList.add('active')
+    mobileMenuBtn.classList.add('active')
+  }
 })
 
 
