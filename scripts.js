@@ -27,6 +27,7 @@ const pages = [
   faqsEl
 ];
 
+
 flipCard.forEach((card) => {
   card.addEventListener("mouseenter", () => {
     card.firstElementChild.style.display = "flex";
