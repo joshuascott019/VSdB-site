@@ -98,7 +98,7 @@ navItems.forEach((item) => {
         }
         break;
       default:
-        // console.log("ERROR");
+        console.log("ERROR");
     }
   });
 });

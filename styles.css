@@ -250,7 +250,7 @@ nav {
 }
 #whatsapp-widget {
   opacity: 0;
-  transition: all 0.3s linear;
+  transition: all 0.2s ease;
   position: fixed;
   right: 25px;
   bottom: 25px;
@@ -331,7 +331,7 @@ nav {
   cursor: pointer;
   z-index: 5;
   overflow: hidden;
-  transition: all 0.3s linear;
+  transition: all 0.2s ease;
   &:hover {
     background-color: #34fd7e;
   }
