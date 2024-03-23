@@ -1,3 +1,4 @@
+const pageBody = document.getElementById('main-body')
 const navItems = document.querySelectorAll(".nav-item");
 const heroEl = document.getElementById('hero')
 const novoEl = document.getElementById("novo");
@@ -50,6 +51,7 @@ navItems.forEach((item) => {
           mobileNav.classList.remove('active')
           mobileNavMenu.classList.remove('active')
           mobileMenuBtn.classList.remove('active')
+          pageBody.classList.remove('lock-scroll')
         }
         break;
       case "início":
@@ -62,6 +64,7 @@ navItems.forEach((item) => {
           mobileNav.classList.remove('active')
           mobileNavMenu.classList.remove('active')
           mobileMenuBtn.classList.remove('active')
+          pageBody.classList.remove('lock-scroll')
         }
         break;
         case "contato":
@@ -73,6 +76,7 @@ navItems.forEach((item) => {
             mobileNav.classList.remove('active')
             mobileNavMenu.classList.remove('active')
             mobileMenuBtn.classList.remove('active')
+            pageBody.classList.remove('lock-scroll')
           }
           break;
       case "sobre":
@@ -84,6 +88,7 @@ navItems.forEach((item) => {
           mobileNav.classList.remove('active')
           mobileNavMenu.classList.remove('active')
           mobileMenuBtn.classList.remove('active')
+          pageBody.classList.remove('lock-scroll')
         }
         break;
       case "FAQ":
@@ -95,6 +100,7 @@ navItems.forEach((item) => {
           mobileNav.classList.remove('active')
           mobileNavMenu.classList.remove('active')
           mobileMenuBtn.classList.remove('active')
+          pageBody.classList.remove('lock-scroll')
         }
         break;
       default:
@@ -134,10 +140,12 @@ mobileMenuBtn.addEventListener('click', ()=>{
     mobileNav.classList.remove('active')
     mobileNavMenu.classList.remove('active')
     mobileMenuBtn.classList.remove('active')
+    pageBody.classList.remove('lock-scroll')
   } else {
     mobileNav.classList.add('active')
     mobileNavMenu.classList.add('active')
     mobileMenuBtn.classList.add('active')
+    pageBody.classList.add('lock-scroll')
   }
 })
 
