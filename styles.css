@@ -418,7 +418,7 @@ main.hidden {
   }
   & p {
     font-size: 1.5rem;
-    width: 60%;
+    width: 40%;
     line-height: 1.5em;
     margin: 10px 0 100px 0;
   }
@@ -440,6 +440,7 @@ main.hidden {
 }
 #novos-bottom-text {
   margin-top: 100px;
+  width: 60%;
 }
 
 /* ================= SOBRE PAGE ================= */
@@ -792,6 +793,11 @@ footer {
   #hero-img {
     display: none;
   }
+  /* Novo Page */
+  #novos-bottom-text {
+    width: 80%;
+  }
+  /* FAQ PAge */
   #faq-container {
     width: 100%;
   }
@@ -808,6 +814,29 @@ footer {
   #hero-img {
     display: none;
   }
+  /* Novo Page */
+  #novo {
+    & h1 {
+      font-size: 2.5rem;
+      /* margin-top: 100px; */
+    }
+    & h3 {
+      font-size: 2rem;
+      /* font-weight: 400; */
+      line-height: .8em;
+    }
+    & small {
+      font-size: 1.5rem;
+      /* line-height: 0.9rem; */
+    }
+    & p {
+      font-size: 1.5rem;
+      width: 80%;
+      /* line-height: 1.5em; */
+      /* margin: 10px 0 100px 0; */
+    }
+  }
+  /* FAQ Page */
   main#faqs {
     text-align: center;
     & h1 {
@@ -839,6 +868,37 @@ footer {
   #hero-img {
     display: none;
   }
+  /* Novo Page */
+  #novo {
+    width: 90%;
+    margin: 100px auto 150px;
+    & h1 {
+      text-align: center;
+      font-size: 1.5rem;
+      /* margin-top: 100px; */
+    }
+    & h3 {
+      font-size: 1.5rem;
+      /* font-weight: 400; */
+      line-height: .8em;
+    }
+    & small {
+      font-size: 1rem;
+      /* line-height: 0.9rem; */
+    }
+    & p {
+      text-align: center;
+      font-size: 1rem;
+      width: 80%;
+      margin: 10px auto 100px;
+      /* line-height: 1.5em; */
+      /* margin: 10px 0 100px 0; */
+    }
+  }
+  #novos-bottom-text {
+    width: 100%;
+  }
+  /* FAQ Page */
   main#faqs {
     text-align: center;
     width: 80%;
