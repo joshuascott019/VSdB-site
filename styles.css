@@ -3,7 +3,7 @@
   margin: 0;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -64,7 +64,7 @@ p {
   color: #fff;
 }
 
-.lock-scroll{
+.lock-scroll {
   overflow: hidden;
 }
 
@@ -138,12 +138,12 @@ nav {
   z-index: 15;
   /* margin: 20px 16% 0 0; */
   padding: 20px 16% 0 0;
-  & #menu-button{
+  & #menu-button {
     font-size: 2.5rem;
     color: var(--bg-color-purple);
     margin: 10px;
     cursor: pointer;
-    &.active{
+    &.active {
       color: #fff;
       position: fixed;
     }
@@ -157,11 +157,11 @@ nav {
     gap: 30px;
     color: #fff;
     margin: 80px 0 0 0;
-    &.active{
+    &.active {
       display: flex;
     }
   }
-  &.active{
+  &.active {
     background-color: #443b9180;
     height: 100%;
     width: 100%;
@@ -229,6 +229,7 @@ nav {
 
 #hero-img {
   position: relative;
+  /* height: 10%; */
 }
 
 #hero-img img {
@@ -746,36 +747,112 @@ footer {
   }
 }
 
+/* NICHE SETTINGS */
+@media (max-width: 1500px) {
+  #hero-img {
+    width: 0;
+    & img {
+      height: 100%;
+      opacity: 0.5;
+    }
+  }
+  #hero-info {
+    width: 100%;
+  }
+}
 
-
-
-/* DESKTOP SCREENS */
+/* TV/XL SCREENS */
 @media (min-width: 1201px) {
+  #mobile-nav {
+    display: none;
+  }
+}
+
+/* DESKTOP/LARGE SCREENS */
+@media (min-width: 1025px) and (max-width: 1200px) {
+  #mobile-nav {
+    display: none;
+  }
+  /* #hero-info{
+    width: 100%;
+  } */
+  #hero-img {
+    display: none;
+  }
+}
+
+/* LAPTOPS/SMALL SCREENS */
+@media (min-width: 769px) and (max-width: 1024px) {
+  #nav-items {
+    display: none;
+  }
+  #whatsapp {
+    display: none;
+  }
+  #hero-img {
+    display: none;
+  }
+  #faq-container {
+    width: 100%;
+  }
+}
+
+/* iPAD/TABLET SCREENS */
+@media (min-width: 481px) and (max-width: 768px) {
+  #nav-items {
+    display: none;
+  }
+  #whatsapp {
+    display: none;
+  }
+  #hero-img {
+    display: none;
+  }
+  main#faqs {
+    text-align: center;
+    & h1 {
+      font-size: 2rem;
+    }
+  }
+  #faqs-subtitle {
+    font-size: 1.2rem;
+  }
+  #faq-container {
+    width: 100%;
+  }
+}
+
+/* MOBILE SCREENS (min-width: 320px)*/
+@media (max-width: 480px) {
+  header{
+    width: 100%;
+  }
   #mobile-nav{
+    padding: 20px 2% 0 0;
+  }
+  #nav-items {
     display: none;
   }
-}
-
-
-/* LAPTOP SCREENS */
-@media (max-width: 1200px) {
-  #nav-items{
+  #whatsapp {
     display: none;
   }
-  #whatsapp{
+  #hero-img {
     display: none;
   }
+  main#faqs {
+    text-align: center;
+    width: 80%;
+    & h1 {
+      font-size: 1.5rem;
+    }
+  }
+  #faqs-subtitle {
+    font-size: 1rem;
+  }
+  #faq-container {
+    width: 100%;
+  }
+  .faq-toggle h3{
+    font-size: 1rem;
+  }
 }
-
-
-/* TABLET SCREENS */
-@media (max-width: 768px) {
-
-}
-
-
-/* MOBILE SCREENS */
-@media (max-width: 576px) {
-
-}
-

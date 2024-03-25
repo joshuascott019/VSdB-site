@@ -28,6 +28,15 @@ const pages = [
   faqsEl
 ];
 
+// window.addEventListener('resize', ()=> {
+//   const windowWidth = window.innerWidth
+//   // console.log(windowWidth);
+//   if(windowWidth === 1024 || windowWidth === 1025){
+//     location.reload()
+//     console.log('page reloaded');
+//   }
+// })
+
 
 flipCard.forEach((card) => {
   card.addEventListener("mouseenter", () => {
