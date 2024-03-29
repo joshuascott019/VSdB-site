@@ -449,12 +449,15 @@ main.hidden {
   width: 70%;
   margin: -50px auto 75px;
   display: flex;
+  position: relative;
 }
 #sobre-text {
   display: flex;
   flex-direction: column;
   justify-content: end;
   align-items: start;
+  width: 50%;
+  padding: 50px 0 0 0;
   & h1 {
     font-size: 3rem;
     margin-bottom: 55px;
@@ -462,6 +465,17 @@ main.hidden {
   & p {
     font-size: 1.4rem;
     line-height: 1.8em;
+  }
+}
+#sobre-img {
+  z-index: -1;
+  position: relative;
+  & img {
+    height: 600px;
+    max-height: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
   }
 }
 
@@ -764,11 +778,10 @@ footer {
   }
 }
 @media (max-width: 1350px) {
-  #hero-img img {    
+  #hero-img img {
     opacity: 0.2;
   }
 }
-
 
 /* TV/XL SCREENS */
 @media (min-width: 1201px) {
@@ -788,21 +801,27 @@ footer {
   #hero-img {
     display: none;
   }
-  #second-container img{
+  #second-container img {
     display: none;
   }
-  #contact-img{
-    opacity: .5;
+  #contact-img {
+    opacity: 0.5;
     /* display: none; */
     z-index: -1;
   }
-    /* CONTATO Form */
-    #contact-form{
-      width: 80%;
-      margin: 0 auto 150px;
-    }
-  
+  #sobre-img {
+    display: none;
+  }
 
+  /* CONTATO Form */
+  #contact-form {
+    width: 80%;
+    margin: 0 auto 150px;
+  }
+  /* Sobre Page */
+  #sobre-text{
+    width: 100%;
+  }
 }
 
 /* LAPTOPS/SMALL SCREENS */
@@ -816,23 +835,35 @@ footer {
   #hero-img {
     display: none;
   }
-  #second-container img{
+  #second-container img {
     display: none;
   }
-  #contact-img{
+  #contact-img {
     display: none;
   }
-    /* CONTATO Form */
-    #contact-form{
-      width: 80%;
-      margin: 0 auto 150px;
-    }
-  
+  #sobre-img {
+    display: none;
+  }
 
+  /* INICIO Page */
+  .container-feat-cards-span {
+    gap: 0;
+    padding: 50px;
+  }
+  /* CONTATO Form */
+  #contact-form {
+    width: 80%;
+    margin: 0 auto 150px;
+  }
   /* Novo Page */
   #novos-bottom-text {
     width: 80%;
   }
+    /* Sobre Page */
+    #sobre-text{
+      width: 100%;
+    }
+  
   /* FAQ PAge */
   #faq-container {
     width: 100%;
@@ -850,11 +881,20 @@ footer {
   #hero-img {
     display: none;
   }
-  #second-container img{
+  #second-container img {
     display: none;
   }
-  #contact-img{
+  #contact-img {
     display: none;
+  }
+  #sobre-img {
+    display: none;
+  }
+
+  /* INICIO Page */
+  .container-feat-cards-span {
+    gap: 0;
+    padding: 50px;
   }
 
   /* Novo Page */
@@ -866,7 +906,7 @@ footer {
     & h3 {
       font-size: 2rem;
       /* font-weight: 400; */
-      line-height: .8em;
+      line-height: 0.8em;
     }
     & small {
       font-size: 1.5rem;
@@ -880,21 +920,21 @@ footer {
     }
   }
   /* Inicio Page */
-  .container-intro{
-    & h1{
+  .container-intro {
+    & h1 {
       font-size: 2rem;
     }
-    & p{
+    & p {
       font-size: 1rem;
       width: 80%;
     }
   }
-    /* CONTATO Form */
-    #contact-form{
-      width: 80%;
-      margin: 0 auto 150px;
-    }
-  
+  /* CONTATO Form */
+  #contact-form {
+    width: 80%;
+    margin: 0 auto 150px;
+  }
+
   /* FAQ Page */
   main#faqs {
     text-align: center;
@@ -908,6 +948,17 @@ footer {
   #faq-container {
     width: 100%;
   }
+    /* Sobre Page */
+    #sobre-text{
+      width: 100%;
+      & h1{
+        font-size: 2.5rem;
+      }
+      & p{
+        font-size: 1rem;
+      }
+    }
+  
   /* Footer */
   footer {
     flex-wrap: wrap-reverse;
@@ -925,25 +976,25 @@ footer {
 
 /* MOBILE SCREENS (min-width: 320px)*/
 @media (max-width: 480px) {
-  nav img{
+  nav img {
     height: 60px;
     margin-left: 6%;
   }
-  header{
+  header {
     width: 100%;
   }
-  #hero{
+  #hero {
     width: 80%;
     margin: auto;
-    & #hero-title{
+    & #hero-title {
       font-size: 2rem;
     }
-    & #hero-text{
+    & #hero-text {
       font-size: 1rem;
       line-height: 1.5rem;
     }
   }
-  #mobile-nav{
+  #mobile-nav {
     padding: 20px 2% 0 0;
   }
   #nav-items {
@@ -955,26 +1006,51 @@ footer {
   #hero-img {
     display: none;
   }
-  #second-container img{
+  #second-container img {
     display: none;
   }
-  #contact-img{
+  #contact-img {
+    display: none;
+  }
+  #sobre-img {
     display: none;
   }
   /* Inicio Page */
-  .container-intro{
-    & h1{
-      font-size: 2rem;
+  .container-intro {
+    & h1 {
+      font-size: 1.5rem;
     }
-    & p{
+    & p {
       font-size: 1rem;
       width: 80%;
     }
-  }  
+  }
+  .container-feat-cards-span {
+    gap: 0;
+    padding: 50px;
+  }
+  .feat-card {
+    width: 100%;
+  }
+  #sixth-container {
+    & .feat-card h3 {
+      font-size: 1.5rem;
+    }
+    & .feat-card p {
+      font-size: 1rem;
+    }
+  }
+
   /* CONTATO Form */
-  #contact-form{
+  #contact-form {
     width: 80%;
     margin: 0 auto 150px;
+    & p {
+      font-size: 1rem;
+    }
+    & #submit-btn {
+      width: 105%;
+    }
   }
   /* Novo Page */
   #novo {
@@ -988,7 +1064,7 @@ footer {
     & h3 {
       font-size: 1.5rem;
       /* font-weight: 400; */
-      line-height: .8em;
+      line-height: 0.8em;
     }
     & small {
       font-size: 1rem;
@@ -1003,7 +1079,7 @@ footer {
       /* margin: 10px 0 100px 0; */
     }
   }
-  #novos-feat-list{
+  #novos-feat-list {
     width: 90%;
     margin: auto;
   }
@@ -1024,24 +1100,34 @@ footer {
   #faq-container {
     width: 100%;
   }
-  .faq-toggle h3{
+  .faq-toggle h3 {
     font-size: 1rem;
   }
-    /* Footer */
-    footer {
-      flex-wrap: wrap-reverse;
-    }
-    #footer-contact-info {
-      padding: 100px 20px 0;
-      text-align: center;
-    }
-    #footer-links {
-      justify-content: center;
+    /* Sobre Page */
+    #sobre-text{
       width: 100%;
-      gap: 20px 40px;
-      & a {
-        width: 40%;
+      & h1{
+        font-size: 2rem;
+      }
+      & p{
+        font-size: 1rem;
       }
     }
   
+  /* Footer */
+  footer {
+    flex-wrap: wrap-reverse;
+  }
+  #footer-contact-info {
+    padding: 100px 20px 0;
+    text-align: center;
+  }
+  #footer-links {
+    justify-content: center;
+    width: 100%;
+    gap: 20px 40px;
+    & a {
+      width: 40%;
+    }
+  }
 }
