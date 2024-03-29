@@ -68,6 +68,10 @@ p {
   overflow: hidden;
 }
 
+div.hidden{
+  display: none;
+}
+
 /* ============== HEADER SECTION ============== */
 header {
   width: 70%;
@@ -392,6 +396,55 @@ nav {
     opacity: 1;
   }
 }
+/* COOKIES & POLICY PAGE */
+#review-consent-btn{
+  position: fixed;
+  bottom: 0;
+  right: 100px;
+  box-shadow: 2px 2px 5px 2px black;
+  padding: 10px 12px;
+  background-color: white;
+  cursor: pointer;
+  & p{
+    font-size: .8rem;
+  }
+}
+#website-uses-cookies-alert{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 2px 2px 10px 10px rgba(0, 0, 0, .1);
+  padding: 30px;
+  & a{
+    font-weight: 400;
+    text-decoration: underline;
+  }
+  & p, & button{
+    margin: 10px 5px;
+  }
+  & button{
+    border-radius: 0;
+    border: 0;
+    padding: 8px;
+    cursor: pointer;
+    &#cookies-configure-btn{
+      color: rgba(51, 51, 51, .8);
+      background-color: rgba(179, 180, 181, 1);
+      &:hover{
+        background-color: rgb(152, 152, 153);
+      }
+    }
+    &#cookies-accept-btn{
+      color: #fff;
+      background-color: rgba(68, 59, 145, 1);
+      &:hover{
+        background-color: rgb(49, 43, 107);
+      }
+    }
+  }
+}
+
 
 /* ========================================== */
 /* ============== MAIN SECTION ============== */
