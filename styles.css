@@ -452,6 +452,52 @@ nav {
 main.hidden {
   display: none;
 }
+/* ================ COOKIES PAGE ================ */
+#cookies-policy-page{
+  width: 70%;
+  margin: 0 auto;
+  padding: 100px 0;
+  & h1{
+    font-size: 3rem;
+  }
+  & h3{
+    font-size: 1.5rem;
+    margin: 50px 0 20px 0;
+  }
+  & p{
+    width: 60%;
+    margin: 0 0 20px 0;
+    line-height: 1.5rem;
+  }
+  & table{
+    width: 70%;
+    border-collapse: collapse;
+    & tr{
+      padding: 0;
+    }
+    & td, & th{
+      border: 1px solid #ccc;
+      vertical-align: top;
+      text-align: left;
+      color: #333;
+    }
+    & th{
+      padding: 10px;
+      background-color: #e2e2e2;
+    }
+    & td{
+      width: 50%;
+      height: 75px;
+      padding: 5px 20px 0 5px;
+      line-height: 1.5rem;
+      background-color: #f7f7f7;
+    }
+  }
+  &.hidden{
+    display: none;
+  }
+}
+
 
 /* ================ NOVO PAGE ================ */
 #novo {

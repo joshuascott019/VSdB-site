@@ -1,1022 +1,1252 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="images/favicon.png" type="image/x-icon">
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Fontawesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="styles.css" />
-    <title>VitóriaSoft do Brasil</title>
-  </head>
 
-  <body id="main-body" class="">
-    <header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="images/favicon.png" type="image/x-icon">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+  <title>VitóriaSoft do Brasil</title>
+</head>
 
-      <nav>
-        <img src="images/OLD/nav-logo.png" alt="" />
-        <span id="nav-items">
+<body id="main-body" class="">
+  <header>
+
+    <nav>
+      <img src="images/OLD/nav-logo.png" alt="" />
+      <span id="nav-items">
+        <a href="#" class="nav-item blue-fill-animation">novo</a>
+        <a href="#" class="nav-item purple-fill-animation active">início</a>
+        <a href="#" class="nav-item purple-fill-animation">contato</a>
+        <a href="#" class="nav-item purple-fill-animation">sobre</a>
+        <a href="#" class="nav-item purple-fill-animation">FAQ</a>
+      </span>
+      <div id="mobile-nav" class="">
+        <div id="menu-button" class="">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <span id="mobile-nav-items" class="">
           <a href="#" class="nav-item blue-fill-animation">novo</a>
           <a href="#" class="nav-item purple-fill-animation active">início</a>
           <a href="#" class="nav-item purple-fill-animation">contato</a>
           <a href="#" class="nav-item purple-fill-animation">sobre</a>
           <a href="#" class="nav-item purple-fill-animation">FAQ</a>
         </span>
-        <div id="mobile-nav" class="">          
-          <div id="menu-button" class="">
-            <i class="fa-solid fa-bars"></i>
-          </div>
-          <span id="mobile-nav-items" class="">
-            <a href="#" class="nav-item blue-fill-animation">novo</a>
-            <a href="#" class="nav-item purple-fill-animation active">início</a>
-            <a href="#" class="nav-item purple-fill-animation">contato</a>
-            <a href="#" class="nav-item purple-fill-animation">sobre</a>
-            <a href="#" class="nav-item purple-fill-animation">FAQ</a>
-          </span>
-        </div>
-      </nav>
-
-      <div id="hero" class="">
-        <div id="hero-info">
-          <h1 id="hero-title">
-            <span class="purple-font">Cuidar da sua farmácia</span><br />
-            pode ser fácil, acredite!
-          </h1>
-          <p id="hero-text">
-            Cada farmácia é única, por isso desenvolvemos
-            <strong
-              >sistemas com alta capacidade de personalização para você</strong
-            >
-            gerenciar sua farmácia do jeito que quiser!
-          </p>
-          <a id="hero-know-more-btn" href="#">CONHEÇA NOSSO SISTEMA</a>
-          <span id="hero-details" class="red-font">
-            <i class="fa-solid fa-child-reaching"></i>
-            <p>fácil de usar</p>
-            <i class="fa-solid fa-wifi"></i>
-            <p>suporte online</p>
-            <i class="fa-solid fa-phone"></i>
-            <p>0800 ilimitado</p>
-          </span>
-        </div>
-        <div id="hero-img">
-          <img src="images/Site VitoriaSoft novas imagens-07.png" alt="" />
-        </div>
       </div>
+    </nav>
 
-      <div id="whatsapp">
-        <div id="whatsapp-widget" class="">
-          <div id="whatsapp-widget-header">      
-            <h3><i class="fa-brands fa-whatsapp"></i>WhatsApp</h3>
-            <i id="whatsapp-close-btn" class="fa-solid fa-x"></i>
-          </div>
-          <div id="whatsapp-widget-chat">
-            <div class="chat-bubble">
-              <p>Olá 👋.</p>
-              <p>Como podemos te ajudar?</p>
-            </div>
-          </div>
-        </div>
-        <div id="whatsapp-widget-button">
-          <div id="open-widget-button" class="active">
-            <i class="fa-brands fa-whatsapp"></i>
-          </div>
-          <a id="open-chat-button" class="" href="https://api.whatsapp.com/send/?phone=552721210045&text=Ol%C3%A1%21+Gostaria+de+tirar+uma+d%C3%BAvida+sobre+o+Vit%C3%B3riaSoft.&type=phone_number&app_absent=0" target="_blank">
-            <p>Abrir chat</p>
-            <i class="fa-solid fa-arrow-right"></i>
-          </a>
-        </div>
-      </div>
-
-      <div id="review-consent-btn" class="hidden">
-        <p class="purple-font">Revisar o consentimento</p>
-      </div>
-
-      <div id="website-uses-cookies-alert">
-        <p>Esse website utiliza cookies:</p>
-        <p class="purple-font">Usamos cookies em nosso website para lhe dar a 
-          melhor experiência ao lembrar suas preferências e visitas. Ao clicar 
-          em "Aceitar todos", você consente com o uso de TODOS os cookies. Caso 
-          prefira, você pode visitar as "Configurações de Cookies" para 
-          providenciar um consentimento controlado.
-          <a href="#" id="cookies-learn-more">Leia mais</a>
+    <div id="hero" class="hidden">
+      <div id="hero-info">
+        <h1 id="hero-title">
+          <span class="purple-font">Cuidar da sua farmácia</span><br />
+          pode ser fácil, acredite!
+        </h1>
+        <p id="hero-text">
+          Cada farmácia é única, por isso desenvolvemos
+          <strong>sistemas com alta capacidade de personalização para você</strong>
+          gerenciar sua farmácia do jeito que quiser!
         </p>
-        <div>
-          <button id="cookies-configure-btn" class="cookies-btn">Configuração de Cookies</button>
-          <button id="cookies-accept-btn" class="cookies-btn">Aceitar todos</button>
+        <a id="hero-know-more-btn" href="#">CONHEÇA NOSSO SISTEMA</a>
+        <span id="hero-details" class="red-font">
+          <i class="fa-solid fa-child-reaching"></i>
+          <p>fácil de usar</p>
+          <i class="fa-solid fa-wifi"></i>
+          <p>suporte online</p>
+          <i class="fa-solid fa-phone"></i>
+          <p>0800 ilimitado</p>
+        </span>
+      </div>
+      <div id="hero-img">
+        <img src="images/Site VitoriaSoft novas imagens-07.png" alt="" />
+      </div>
+    </div>
+
+    <div id="whatsapp">
+      <div id="whatsapp-widget" class="">
+        <div id="whatsapp-widget-header">
+          <h3><i class="fa-brands fa-whatsapp"></i>WhatsApp</h3>
+          <i id="whatsapp-close-btn" class="fa-solid fa-x"></i>
+        </div>
+        <div id="whatsapp-widget-chat">
+          <div class="chat-bubble">
+            <p>Olá 👋.</p>
+            <p>Como podemos te ajudar?</p>
+          </div>
         </div>
       </div>
+      <div id="whatsapp-widget-button">
+        <div id="open-widget-button" class="active">
+          <i class="fa-brands fa-whatsapp"></i>
+        </div>
+        <a id="open-chat-button" class=""
+          href="https://api.whatsapp.com/send/?phone=552721210045&text=Ol%C3%A1%21+Gostaria+de+tirar+uma+d%C3%BAvida+sobre+o+Vit%C3%B3riaSoft.&type=phone_number&app_absent=0"
+          target="_blank">
+          <p>Abrir chat</p>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
 
-    </header>
+    <div id="review-consent-btn" class="hidden">
+      <p class="purple-font">Revisar o consentimento</p>
+    </div>
 
-    <main id="novo" class="hidden">
-      <h1 class="blue-font">Novos módulos,<br> novas atualizações...</h1>
-      <p>Conheça os nossos <strong>softwares de gestão
+    <div id="website-uses-cookies-alert" class="hidden">
+      <p>Esse website utiliza cookies:</p>
+      <p class="purple-font">Usamos cookies em nosso website para lhe dar a
+        melhor experiência ao lembrar suas preferências e visitas. Ao clicar
+        em "Aceitar todos", você consente com o uso de TODOS os cookies. Caso
+        prefira, você pode visitar as "Configurações de Cookies" para
+        providenciar um consentimento controlado.
+        <a href="#" id="cookies-learn-more">Leia mais</a>
+      </p>
+      <div>
+        <button id="cookies-configure-btn" class="cookies-btn">Configuração de Cookies</button>
+        <button id="cookies-accept-btn" class="cookies-btn">Aceitar todos</button>
+      </div>
+    </div>
+
+  </header>
+  <!-- REMEMBER TO REMOVE "hidden" CLASS FROM HERO AND INICIO ELEMENTS -->
+  <main id="cookies-policy-page" class="purple-font">
+    <h1 class="purple-font">Política de Cookies:</h1>
+    <h3>Sobre essa Política de Cookies:</h3>
+    <p>Esta Política de Cookies explica o que são os cookies e como os usamos, os tipos de cookies que usamos, ou seja,
+      as informações que coletamos usando cookies e como essas informações são usadas, e como controlar as preferências
+      de cookies.</p>
+    <p>Para obter mais informações sobre como usamos, armazenamos e mantemos os seus dados pessoais seguros, consulte a
+      nossa Política de Privacidade.</p>
+    <p>Você pode a qualquer momento alterar ou retirar o seu consentimento da Declaração de Cookies em nosso site.</p>
+    <p>Saiba mais sobre quem somos, como você pode entrar em contato conosco e como processamos dados pessoais em nossa
+      Política de Privacidade.</p>
+    <p>Seu consentimento se aplica aos seguintes domínios: vitoriasoft.com.br</p>
+    <h3>O que são cookies?</h3>
+    <p>Cookies são pequenos arquivos de texto que são usados para armazenar pequenos pedaços de informações. Eles são
+      armazenados no seu dispositivo quando o site é carregado no seu navegador.</p>
+    <p>Esses cookies nos ajudam a fazer o site funcionar corretamente, torná-lo mais seguro, fornecer uma melhor
+      experiência ao usuário e entender como o site funciona, e analisar o que funciona e o que precisa ser melhorado.
+    </p>
+    <h3>Como usamos os cookies?</h3>
+    <p>Como a maioria dos serviços online, nosso site usa cookies próprios e de terceiros para diversos fins.</p>
+    <p>Os cookies próprios são principalmente necessários para que o site funcione da maneira correta e não coletam
+      nenhum dos seus dados de identificação pessoal.</p>
+    <p>Os cookies de terceiros usados em nosso site são principalmente para entender como o site funciona, como você
+      interage com o nosso site, para manter nossos serviços seguros, fornecer anúncios relevantes para você e, em suma,
+      fornecer a você uma experiência de usuário melhor, e ajudar a agilizar suas futuras interações com o nosso site.
+    </p>
+    <h3>Que tipos de cookies usamos?</h3>
+    <p><span>Cookies essenciais:</span>Alguns cookies são essenciais para que você possa experimentar todas as
+      funcionalidades do nosso site. Eles nos permitem manter as sessões do usuário e evitar quaisquer ameaças de
+      segurança. Eles não coletam ou armazenam nenhuma informação pessoal.</p>
+    <p><span>Cookies de estatísticas:</span>Esses cookies armazenam informações como o número de visitantes do site, o
+      número de visitantes únicos, quais páginas do site foram visitadas, a fonte da visita etc. Esses dados nos ajudam
+      a entender e analisar o desempenho do site e analisar onde precisa de melhorias.</p>
+    <p><span>Cookies de marketing:</span>Nosso site exibe anúncios. Esses cookies são usados para personalizar os
+      anúncios que mostramos a você para que sejam significativos para você. Esses cookies também nos ajudam a
+      acompanhar a eficiência dessas campanhas publicitárias. As informações armazenadas nesses cookies também podem ser
+      usadas pelos provedores de anúncios terceirizados para exibir anúncios em outros sites durante a sua navegação.
+    </p>
+    <p><span>Cookies funcionais:</span>São os cookies que auxiliam algumas funcionalidades não-essenciais em nosso site.
+      Essas funcionalidades incluem incorporar conteúdo como vídeos ou compartilhar conteúdo do site em plataformas de
+      mídia social.</p>
+    <p><span>Cookies de preferências:</span>Esses cookies nos ajudam a armazenar suas configurações e preferências de
+      navegação, como preferências de idioma, para que você tenha uma experiência melhor e eficiente em futuras visitas
+      ao nosso site.</p>
+    <p>A lista abaixo detalha os cookies usados no nosso site:</p>
+    <table>
+      <tr>
+        <th>COOKIE</th>
+        <th>DESCRIÇÃO</th>
+      </tr>
+      <tr>
+        <td>cookielawinfo-checkbox-analytics</td>
+        <td>Este cookie é colocado pelo plugin GDPR Cookie Consent. O cookie é usado para armazenar o consentimento do
+          usuário para os cookies na categoria “Analytics”.</td>
+      </tr>
+      <tr>
+        <td>cookielawinfo-checkbox-functional</td>
+        <td>O cookie é definido pelo plugin GDPR cookie consent para registrar o consentimento do usuário para os
+          cookies na categoria “Funcional”.</td>
+      </tr>
+      <tr>
+        <td>cookielawinfo-checkbox-necessary</td>
+        <td>Este cookie é colocado pelo plugin GDPR Cookie Consent. O cookie é usado para armazenar o consentimento do
+          usuário para os cookies na categoria “Necessário”.</td>
+      </tr>
+      <tr>
+        <td>cookielawinfo-checkbox-others</td>
+        <td>Este cookie é colocado pelo plugin GDPR Cookie Consent. O cookie é usado para armazenar o consentimento do
+          usuário para os cookies na categoria “Outros”.</td>
+      </tr>
+      <tr>
+        <td>cookielawinfo-checkbox-performance</td>
+        <td>Esse cookie é definido pelo plugin GDPR Cookie Consent. O cookie é usado para armazenar o consentimento do
+          usuário para os cookies na categoria “Performance”.</td>
+      </tr>
+      <tr>
+        <td>elementor</td>
+        <td>Este cookie é usado pelo tema WordPress do site. Ele permite que o proprietário do site implemente ou altere
+          o conteúdo do site em tempo real.</td>
+      </tr>
+      <tr>
+        <td>viewed_cookie_policy</td>
+        <td>O cookie é colocado pelo plugin GDPR Cookie Consent e é usado para armazenar se o usuário consentiu ou não
+          com o uso de cookies. Ele não armazena nenhum dado pessoal.</td>
+      </tr>
+    </table>
+    <h3>Como eu posso controlar as preferências de cookies?</h3>
+    <p>Caso decida alterar suas preferências posteriormente durante a sua navegação, você pode clicar na aba “Política
+      de Privacidade & Cookies” na sua tela. Isso exibirá o aviso de consentimento novamente, permitindo que você altere
+      suas preferências ou retire totalmente seu consentimento.</p>
+    <p>Além disso, diferentes navegadores fornecem métodos diferentes para bloquear e excluir cookies usados por sites.
+      Você pode alterar as configurações do seu navegador para bloquear/excluir os cookies.</p>
+  </main>
+
+  <main id="novo" class="hidden">
+    <h1 class="blue-font">Novos módulos,<br> novas atualizações...</h1>
+    <p>Conheça os nossos <strong>softwares de gestão
       </strong> para a sua farmácia de manipulação:</p>
 
-      <div id="novos-feat-list">
-        <div class="novos-feat">
-          <div><img src="images/imagenssitenovo-02.png" alt=""></div>
-          <div class="novos-feat-text"><h3><strong>VS<span class="blue-font">Cloud:</span></strong><small> Seu VSFarmácia em nuvem.</small></h3></div>
+    <div id="novos-feat-list">
+      <div class="novos-feat">
+        <div><img src="images/imagenssitenovo-02.png" alt=""></div>
+        <div class="novos-feat-text">
+          <h3><strong>VS<span class="blue-font">Cloud:</span></strong><small> Seu VSFarmácia em nuvem.</small></h3>
         </div>
-        <div class="novos-feat">
-          <div><img src="images/imagenssitenovo-03.png" alt=""></div>
-          <div class="novos-feat-text"><h3><strong>VS<span class="blue-font">Print:</span></strong><small> Imprima relatórios, fichas de <br> pesagem e rótulos em qualquer lugar.</small></h3></div>
-        </div>
-        <div class="novos-feat">
-          <div><img src="images/imagenssitenovo-04.png" alt=""></div>
-          <div class="novos-feat-text"><h3><strong>VS<span class="blue-font">Dashboard:</span></strong><small> Acompanhe dashboards e <br> gráficos na web, PC e celular.</small></h3></div>
-        </div>
-        <div class="novos-feat">
-          <div><img src="images/imagenssitenovo-05.png" alt=""></div>
-          <div class="novos-feat-text"><h3><strong>VS<span class="blue-font">IA:</span></strong><small> Atenda seu cliente por IA.</small></h3></div>
-        </div>
-
-        <h1 id="novos-bottom-text"><strong>Entre em contato conosco e peça uma demonstração.</strong></h1>
       </div>
-    </main>
+      <div class="novos-feat">
+        <div><img src="images/imagenssitenovo-03.png" alt=""></div>
+        <div class="novos-feat-text">
+          <h3><strong>VS<span class="blue-font">Print:</span></strong><small> Imprima relatórios, fichas de <br> pesagem
+              e rótulos em qualquer lugar.</small></h3>
+        </div>
+      </div>
+      <div class="novos-feat">
+        <div><img src="images/imagenssitenovo-04.png" alt=""></div>
+        <div class="novos-feat-text">
+          <h3><strong>VS<span class="blue-font">Dashboard:</span></strong><small> Acompanhe dashboards e <br> gráficos
+              na web, PC e celular.</small></h3>
+        </div>
+      </div>
+      <div class="novos-feat">
+        <div><img src="images/imagenssitenovo-05.png" alt=""></div>
+        <div class="novos-feat-text">
+          <h3><strong>VS<span class="blue-font">IA:</span></strong><small> Atenda seu cliente por IA.</small></h3>
+        </div>
+      </div>
 
-    <main id="inicio" class="">
-      <div class="container">
-        <div class="container-intro">
-          <h1 class="purple-font">O que você pode customizar?</h1>
-          <p>
-            Seja lá qual for o seu tipo de farmácia, nosso sistema se
-            <strong>adapta</strong> a você.
+      <h1 id="novos-bottom-text"><strong>Entre em contato conosco e peça uma demonstração.</strong></h1>
+    </div>
+  </main>
+
+  <main id="inicio" class="hidden">
+    <div class="container">
+      <div class="container-intro">
+        <h1 class="purple-font">O que você pode customizar?</h1>
+        <p>
+          Seja lá qual for o seu tipo de farmácia, nosso sistema se
+          <strong>adapta</strong> a você.
+        </p>
+      </div>
+      <div class="container-feat-cards-span">
+        <div class="feat-card">
+          <i class="fa-solid fa-clipboard-list purple-font"></i>
+          <h3 class="purple-font">Relatórios</h3>
+          <p class="grey-font">
+            Para gerar relatórios mais específicos, oferecemos a possibilidade
+            de criar gráficos e listas com os dados que fizerem mais sentido
+            para o seu negócio.
           </p>
         </div>
-        <div class="container-feat-cards-span">
-          <div class="feat-card">
+        <div class="feat-card">
+          <i class="fa-solid fa-sliders purple-font"></i>
+          <h3 class="purple-font">Fórmulas</h3>
+          <p class="grey-font">
+            Para que nosso sistema se ajuste às especificidades da sua gestão,
+            nossas fórmulas são reprogramáveis e podem ser editadas conforme
+            você precise.
+          </p>
+        </div>
+        <div class="feat-card">
+          <i class="fa-solid fa-code purple-font"></i>
+          <h3 class="purple-font">Códigos</h3>
+          <p class="grey-font">
+            Além das fórmulas e relatórios customizáveis, também modificamos
+            alguns códigos, porque Sabemos o quanto cada farmácia é única!
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="second-container" class="container">
+      <img src="images/Site VitoriaSoft novas imagens-06.png" alt="" />
+      <div class="container-intro">
+        <h1 class="purple-font">Como funciona nosso sistema?</h1>
+        <p>
+          As funcionalidades do nosso sistema foram criadas para atender a sua
+          farmácia, seja ela <strong> Drogaria</strong> e/ou
+          <strong> Farmácia de Manipulação</strong>:
+        </p>
+      </div>
+      <div class="container-feat-cards-span">
+        <div class="feat-card flip">
+          <div class="feat-card-back purple-bg purple-font">
+            <h3 class="white-font">Funcionalidades Básicas</h3>
+            <p class="white-font">
+              Para Drogaria e/ou Farmácia de Manipulação
+            </p>
+            <a href="#section1" class="card-btn white-font">saiba mais</a>
+          </div>
+          <div class="feat-card-front">
+            <i class="fa-solid fa-circle-dot purple-font"></i>
+            <h3 class="purple-font">Farmácia</h3>
+            <p class=""></p>
+          </div>
+        </div>
+
+        <div class="feat-card flip">
+          <div class="feat-card-back red-bg red-font">
+            <h3 class="white-font">Funcionalidades Exclusivas</h3>
+            <p class="white-font">
+              Funções extras para atender a sua Drogaria
+            </p>
+            <a href="#section2" class="card-btn white-font">saiba mais</a>
+          </div>
+          <div class="feat-card-front">
+            <i class="fa-solid fa-bandage red-font"></i>
+            <h3 class="red-font">Drogaria</h3>
+            <p class=""></p>
+          </div>
+        </div>
+
+        <div class="feat-card flip">
+          <div class="feat-card-back blue-bg blue-font">
+            <h3 class="white-font">Funcionalidades Exclusivas</h3>
+            <p class="white-font">
+              Funções extras para atender a sua Farmácia de Manipulação
+            </p>
+            <a href="#section3" class="card-btn white-font">saiba mais</a>
+          </div>
+          <div class="feat-card-front">
+            <i class="fa-solid fa-flask blue-font"></i>
+            <h3 class="blue-font">Manipulação</h3>
+            <p class=""></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="section1" class="container">
+      <div class="container-intro purple-bg white-font">
+        <h1 class="white-font">Funcionalidades Básicas</h1>
+        <p>
+          Essas funções são a base do nosso sistema Vitória Farmácia e
+          <strong>funcionam para você</strong>, independente do seu tipo de
+          farmácia.
+        </p>
+      </div>
+      <div class="container-feat-cards-span">
+        <div class="feat-card flip">
+          <div class="feat-card-back purple-bg purple-font">
+            <h3 class="white-font">Protegido por duplo firewall</h3>
+            <p class="white-font">
+              Constantemente monitorado por sistemas de segurança, e
+              periodicamente avaliados e revistos por processos de segurança.
+            </p>
+            <a href="#" class="card-btn white-font">saiba mais</a>
+          </div>
+          <div class="feat-card-front">
+            <i class="fa-solid fa-atom purple-font"></i>
+            <h3 class="purple-font">Vitória Net</h3>
+            <p class="purple-font">
+              Sistema de comunicação matriz-filial e filial-filial, que
+              permite que as informações de todos os sistemas sejam
+              compartilhadas entre si, de forma transparente.
+            </p>
+          </div>
+        </div>
+        <div class="feat-card flip">
+          <div class="feat-card-back purple-bg purple-font">
+            <h3 class="white-font">Rastreabilidade total!</h3>
+            <p class="white-font">
+              Controle de entradas, perdas, saídas, transferências e produções
+              internas. Gestão de estoque mínimo e máximo e agilização de
+              reposição com cotação via e-mail.
+            </p>
+            <a href="#" class="card-btn white-font">saiba mais</a>
+          </div>
+          <div class="feat-card-front">
+            <i class="fa-solid fa-circle-dot purple-font"></i>
+            <h3 class="purple-font">Estoque</h3>
+            <p class="purple-font">
+              Sistema de controle de insumos com controle de lotes, validade,
+              itens de consumo interno, matérias-prima, fornecedores,
+              clientes, médicos, atendentes, etc.
+            </p>
+          </div>
+        </div>
+        <div class="feat-card flip">
+          <div class="feat-card-back purple-bg purple-font">
+            <h3 class="white-font">Consultas e Relatórios!</h3>
+            <p class="white-font">
+              Além de faturas de convênio, o sistema fornece o Fluxo de Caixa
+              completo, com despesas fixas e variáveis, lucro, pró-labore e
+              faturamento mínimo desejável.
+            </p>
+            <a href="#" class="card-btn white-font">saiba mais</a>
+          </div>
+          <div class="feat-card-front">
+            <i class="fa-solid fa-calculator purple-font"></i>
+            <h3 class="purple-font">Financeiro</h3>
+            <p class="purple-font">
+              Sistema para gerenciar, conferir, realizar e receber pagamentos,
+              lançar créditos e débitos programados, com muita rapidez e
+              facilidade.
+            </p>
+          </div>
+        </div>
+        <div class="feat-card flip">
+          <div class="feat-card-back purple-bg purple-font">
+            <h3 class="white-font">Segurança e garantia!</h3>
+            <p class="white-font">
+              Preenchimento obrigatório para mais controle na frente de loja!
+              Para geração dos arquivos o sistema faz uma segunda validação,
+              evitando erros.
+            </p>
+            <a href="#" class="card-btn white-font">saiba mais</a>
+          </div>
+          <div class="feat-card-front">
+            <i class="fa-solid fa-list-check purple-font"></i>
+            <h3 class="purple-font">SNGPC</h3>
+            <p class="purple-font">
+              Sistema com comunicação direita ao site da Anvisa, que permite
+              que o envio das movimentações de controlados e inventários sejam
+              feitos com um clique!
+            </p>
+          </div>
+        </div>
+        <div class="feat-card flip">
+          <div class="feat-card-back purple-bg purple-font">
+            <h3 class="white-font">Mais facilidades!</h3>
+            <p class="white-font">
+              O nosso sistema Vitóriasoft Farmácia emite NF-e para vendas e
+              devoluções para empresas e NF-e para fechamento de convênios.
+            </p>
+            <a href="#" class="card-btn white-font">saiba mais</a>
+          </div>
+          <div class="feat-card-front">
+            <i class="fa-solid fa-basket-shopping purple-font"></i>
+            <h3 class="purple-font">Vendas</h3>
+            <p class="purple-font">
+              Permite a realização de vendas de fórmulas e revendas via NF-e,
+              baixando no estoque ou NF-e para consolidação de vendas de
+              convênios.
+            </p>
+          </div>
+        </div>
+        <div class="feat-card flip">
+          <div class="feat-card-back purple-bg purple-font">
+            <h3 class="white-font">Agilliza o atendimento!</h3>
+            <p class="white-font">
+              Há uma segunda parte da tela para outros dados: nome do
+              vendedor, forma de pagamento, convênio, descontos, acréscimos,
+              data e horário de entrega.
+            </p>
+            <a href="#" class="card-btn white-font">saiba mais</a>
+          </div>
+          <div class="feat-card-front">
+            <i class="fa-solid fa-store purple-font"></i>
+            <h3 class="purple-font">Frente de Loja</h3>
+            <p class="purple-font">
+              Sistema de tela para vendedor informar dados relativos à
+              receita, nome do cliente, forma farmacêutica (cápsula, creme,
+              etc.), substâncias e dosagens.
+            </p>
+          </div>
+        </div>
+        <div class="feat-card flip">
+          <div class="feat-card-back purple-bg purple-font">
+            <h3 class="white-font">Flexibilidade!</h3>
+            <p class="white-font">
+              Para você criar promoções e regras de desconto. Solucionar toda
+              a gestão do seu tele-entrega. Gerenciar clientes online, e
+              aceitar pagamento em qualquer loja!
+            </p>
+            <a href="#" class="card-btn white-font">saiba mais</a>
+          </div>
+          <div class="feat-card-front">
+            <i class="fa-solid fa-cash-register purple-font"></i>
+            <h3 class="purple-font">Caixas</h3>
+            <p class="purple-font">
+              Sistema para gerenciar vendas à vista, à prazo e convênio, com
+              opções de parcelamento, homologado para PAF/ECF, Caixa, Cupom
+              Fiscal, com TEF integrado.
+            </p>
+          </div>
+        </div>
+        <div class="feat-card flip">
+          <div class="feat-card-back purple-bg purple-font">
+            <h3 class="white-font">Treinamento online!</h3>
+            <p class="white-font">
+              Acesso remoto e treinamento via skype com gravação de videos
+              para instruir você e a sua equipe a utilizar e personalizar o
+              sistema gerador de relatórios.
+            </p>
+            <a href="#" class="card-btn white-font">saiba mais</a>
+          </div>
+          <div class="feat-card-front">
             <i class="fa-solid fa-clipboard-list purple-font"></i>
             <h3 class="purple-font">Relatórios</h3>
-            <p class="grey-font">
-              Para gerar relatórios mais específicos, oferecemos a possibilidade
-              de criar gráficos e listas com os dados que fizerem mais sentido
-              para o seu negócio.
+            <p class="purple-font">
+              Sistema gerador de relatórios, com personalização de documentos
+              e fórmulas, onde você define como o sistema organiza seus dados
+              e calcula os seus preços.
             </p>
           </div>
-          <div class="feat-card">
-            <i class="fa-solid fa-sliders purple-font"></i>
-            <h3 class="purple-font">Fórmulas</h3>
-            <p class="grey-font">
-              Para que nosso sistema se ajuste às especificidades da sua gestão,
-              nossas fórmulas são reprogramáveis e podem ser editadas conforme
-              você precise.
+        </div>
+        <div class="feat-card flip">
+          <div class="feat-card-back purple-bg purple-font">
+            <h3 class="white-font">Emissão ilimitada!</h3>
+            <p class="white-font">
+              Não há limite mensal! E além disso, possui entradas com
+              importação de arquivos xml para insumos farmacêuticos,
+              medicamentos e produtos de revenda em geral.
             </p>
+            <a href="#" class="card-btn white-font">saiba mais</a>
           </div>
-          <div class="feat-card">
-            <i class="fa-solid fa-code purple-font"></i>
-            <h3 class="purple-font">Códigos</h3>
-            <p class="grey-font">
-              Além das fórmulas e relatórios customizáveis, também modificamos
-              alguns códigos, porque Sabemos o quanto cada farmácia é única!
+          <div class="feat-card-front">
+            <i class="fa-solid fa-file-lines purple-font"></i>
+            <h3 class="purple-font">NF-e</h3>
+            <p class="purple-font">
+              Sistema simples e prático para emissão de Nota Fiscal Eletrônica
+              para fórmulas manipuladas e drogaria, com nota de devolução
+              integrada.
             </p>
           </div>
         </div>
       </div>
+    </div>
 
-      <div id="second-container" class="container">
-        <img src="images/Site VitoriaSoft novas imagens-06.png" alt="" />
+    <div id="section2" class="container">
+      <div class="container-intro white-font red-bg">
+        <h1 class="white-font">Drogaria</h1>
+        <p>
+          Funcionalidades exclusivas que estão disponíveis para facilitar
+          ainda mais a gestão da sua <strong>Drogaria</strong>.
+        </p>
+      </div>
+
+      <div class="container-feat-cards-span">
+        <div class="feat-card flip">
+          <div class="feat-card-back red-bg red-font">
+            <h3 class="white-font">Os pedidos podem ser repetidos!</h3>
+            <p class="white-font">
+              Avisos de reposição de medicamento e uso contínuo. Vidalink,
+              Horizon, Farmárcia Popular, FuncionalCard, Epharma, Pharmalink.
+            </p>
+            <a href="#" class="card-btn white-font">saiba mais</a>
+          </div>
+          <div class="feat-card-front">
+            <i class="fa-solid fa-file-invoice red-font"></i>
+            <h3 class="red-font">PBM</h3>
+            <p class="red-font">
+              O Vitóriasoft Farmácia está integrado a diversos PBMs: Vale Mais
+              Saúde, Vidalink, Prevsaúde, FuncionalCard, Epharma, Pharmalink
+            </p>
+          </div>
+        </div>
+        <div class="feat-card flip">
+          <div class="feat-card-back red-bg red-font">
+            <h3 class="white-font">Todo o lucro fica com a sua farmácia!</h3>
+            <p class="white-font">
+              Durante o atendimento, o vendedor escolhe os medicamentos, e
+              envia a consulta de todos os itens em uma única autorização de
+              venda!
+            </p>
+            <a href="#" class="card-btn white-font">saiba mais</a>
+          </div>
+          <div class="feat-card-front">
+            <i class="fa-solid fa-pills red-font"></i>
+            <h3 class="red-font">Farmácia Popular</h3>
+            <p class="red-font">
+              Sistema de vendas muito simples e rápido, com comunicação direta
+              ao site da Farmácia Popular.
+            </p>
+          </div>
+        </div>
+        <div class="feat-card flip">
+          <div class="feat-card-back red-bg red-font">
+            <h3 class="white-font">Nota Fiscal de Consumidor Eletrônica</h3>
+            <p class="white-font">
+              O Vitória Farmácia gera NFCe online e sob contigência e está
+              integrado ao SAT.
+            </p>
+            <a href="#" class="card-btn white-font">saiba mais</a>
+          </div>
+          <div class="feat-card-front">
+            <i class="fa-solid fa-file-lines red-font"></i>
+            <h3 class="red-font">NFC-e</h3>
+            <p class="red-font">
+              Sistema de vendas para consumidor final, via checkout com
+              controle de caixa, convênios e crediário.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="section3" class="container">
+      <div class="container-intro white-font blue-bg">
+        <h1 class="white-font">Farmácia de Manipulação</h1>
+        <p>
+          Funcionalidades exclusivas que estão disponíveis para facilitar
+          ainda mais a gestão da sua <strong>Farmácia de Manipulação</strong>.
+        </p>
+      </div>
+
+      <div class="container-feat-cards-span">
+        <div class="feat-card flip">
+          <div class="feat-card-back blue-bg blue-font">
+            <h3 class="white-font">
+              Otimiza a preparação magistral de cápsulas!
+            </h3>
+            <p class="white-font">
+              Garante a qualidade e o controle do processo, em conformidade
+              com o Formulário Nacional da Farmacopeia Brasileira.
+            </p>
+            <a href="#" class="card-btn white-font">saiba mais</a>
+          </div>
+          <div class="feat-card-front">
+            <i class="fa-solid fa-weight-scale blue-font"></i>
+            <h3 class="blue-font">Peso médio</h3>
+            <p class="blue-font">
+              Sistema que efetua o cálculo do peso médio magistral e os demais
+              controles estatísticos da amostra, gera relatório e salva os
+              resultados.
+            </p>
+          </div>
+        </div>
+        <div class="feat-card flip">
+          <div class="feat-card-back blue-bg blue-font">
+            <h3 class="white-font">Melhoram o desempenho da equipe!</h3>
+            <p class="white-font">
+              Garantem excelente atendimento com rápida conclusão, e aumentam
+              qualidade de trabalho nos laboratório de manipulação.
+            </p>
+            <a href="#" class="card-btn white-font">saiba mais</a>
+          </div>
+          <div class="feat-card-front">
+            <i class="fa-solid fa-chalkboard-user blue-font"></i>
+            <h3 class="blue-font">Orçamento</h3>
+            <p class="blue-font">
+              Sistema de telas amigáveis que facilitam o atendimento no
+              balcão, com fichas customizadas para a manipulação do
+              medicamento.
+            </p>
+          </div>
+        </div>
+        <div class="feat-card flip">
+          <div class="feat-card-back blue-bg blue-font">
+            <h3 class="white-font">Emissão ilimitada!</h3>
+            <p class="white-font">
+              Não há limite mensal! E além disso, emite NFS-e de vendas de
+              Fórmulas manipuladas, e possui centenas de municípios do Brasil
+              homologados.
+            </p>
+            <a href="#" class="card-btn white-font">saiba mais</a>
+          </div>
+          <div class="feat-card-front">
+            <i class="fa-solid fa-file-lines blue-font"></i>
+            <h3 class="blue-font">NFS-e</h3>
+            <p class="blue-font">
+              Sistema de interface simples, fácil de usar, e um dos mais
+              práticos emissores de Nota Fiscal Eletrônica de serviço do
+              mercado.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="sixth-container" class="container purple-bg white-font">
+      <div class="container-intro">
+        <h1 class="white-font">Por que a VitóriaSoft é diferente?</h1>
+      </div>
+      <div class="container-feat-cards-span">
+        <div class="feat-card">
+          <i class="fa-regular fa-heart white-font"></i>
+          <h3 class="white-font">Somos transparentes</h3>
+          <p class="white-font">
+            Transparência na nossa forma de agir e nos comunicar é uma meta
+            para nós ao tratar os nossos clientes, e também os nossos
+            colaboradores!
+          </p>
+        </div>
+        <div class="feat-card">
+          <i class="fa-solid fa-calendar-days white-font"></i>
+          <h3 class="white-font">Temos experiência</h3>
+          <p class="white-font">
+            Temos a solução completa para a gestão da sua farmácia, porque
+            somamos mais de 25 anos de experiência no mercado, e estamos
+            presentes em mais de 14 estados do Brasil.
+          </p>
+        </div>
+        <div class="feat-card">
+          <i class="fa-regular fa-comments white-font"></i>
+          <h3 class="white-font">Pensamos em você</h3>
+          <p class="white-font">
+            Para oferecer a melhor experiência em relação à gestão da sua
+            farmácia, aprimoramos nosso sistema através dos retornos e
+            considerações que recebemos de cada um dos nossos clientes.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="contact-form-container" class="container">
+      <div id="contact-form">
         <div class="container-intro">
-          <h1 class="purple-font">Como funciona nosso sistema?</h1>
-          <p>
-            As funcionalidades do nosso sistema foram criadas para atender a sua
-            farmácia, seja ela <strong> Drogaria</strong> e/ou
-            <strong> Farmácia de Manipulação</strong>:
-          </p>
+          <h1 class="purple-font">Quer falar com a gente?</h1>
+          <p>A mensagem abaixo é enviada direto para o nosso e-mail.</p>
         </div>
-        <div class="container-feat-cards-span">
-          <div class="feat-card flip">
-            <div class="feat-card-back purple-bg purple-font">
-              <h3 class="white-font">Funcionalidades Básicas</h3>
-              <p class="white-font">
-                Para Drogaria e/ou Farmácia de Manipulação
-              </p>
-              <a href="#section1" class="card-btn white-font">saiba mais</a>
-            </div>
-            <div class="feat-card-front">
-              <i class="fa-solid fa-circle-dot purple-font"></i>
-              <h3 class="purple-font">Farmácia</h3>
-              <p class=""></p>
-            </div>
-          </div>
-
-          <div class="feat-card flip">
-            <div class="feat-card-back red-bg red-font">
-              <h3 class="white-font">Funcionalidades Exclusivas</h3>
-              <p class="white-font">
-                Funções extras para atender a sua Drogaria
-              </p>
-              <a href="#section2" class="card-btn white-font">saiba mais</a>
-            </div>
-            <div class="feat-card-front">
-              <i class="fa-solid fa-bandage red-font"></i>
-              <h3 class="red-font">Drogaria</h3>
-              <p class=""></p>
-            </div>
-          </div>
-
-          <div class="feat-card flip">
-            <div class="feat-card-back blue-bg blue-font">
-              <h3 class="white-font">Funcionalidades Exclusivas</h3>
-              <p class="white-font">
-                Funções extras para atender a sua Farmácia de Manipulação
-              </p>
-              <a href="#section3" class="card-btn white-font">saiba mais</a>
-            </div>
-            <div class="feat-card-front">
-              <i class="fa-solid fa-flask blue-font"></i>
-              <h3 class="blue-font">Manipulação</h3>
-              <p class=""></p>
-            </div>
-          </div>
-        </div>
+        <form action="">
+          <input type="text" placeholder="Nome" required>
+          <input type="email" placeholder="E-mail" required>
+          <input type="number" placeholder="Telefone">
+          <label for="">Escreva sua mensagem abaixo:
+            <textarea name="" id="" cols="100" rows="1" required></textarea>
+          </label>
+          <button id="submit-btn" type="submit" class="white-font red-bg">
+            <i class="fa-solid fa-envelope"></i> <strong>ENVIAR</strong>
+          </button>
+        </form>
       </div>
-
-      <div id="section1" class="container">
-        <div class="container-intro purple-bg white-font">
-          <h1 class="white-font">Funcionalidades Básicas</h1>
-          <p>
-            Essas funções são a base do nosso sistema Vitória Farmácia e
-            <strong>funcionam para você</strong>, independente do seu tipo de
-            farmácia.
-          </p>
-        </div>
-        <div class="container-feat-cards-span">
-          <div class="feat-card flip">
-            <div class="feat-card-back purple-bg purple-font">
-              <h3 class="white-font">Protegido por duplo firewall</h3>
-              <p class="white-font">
-                Constantemente monitorado por sistemas de segurança, e
-                periodicamente avaliados e revistos por processos de segurança.
-              </p>
-              <a href="#" class="card-btn white-font">saiba mais</a>
-            </div>
-            <div class="feat-card-front">
-              <i class="fa-solid fa-atom purple-font"></i>
-              <h3 class="purple-font">Vitória Net</h3>
-              <p class="purple-font">
-                Sistema de comunicação matriz-filial e filial-filial, que
-                permite que as informações de todos os sistemas sejam
-                compartilhadas entre si, de forma transparente.
-              </p>
-            </div>
-          </div>
-          <div class="feat-card flip">
-            <div class="feat-card-back purple-bg purple-font">
-              <h3 class="white-font">Rastreabilidade total!</h3>
-              <p class="white-font">
-                Controle de entradas, perdas, saídas, transferências e produções
-                internas. Gestão de estoque mínimo e máximo e agilização de
-                reposição com cotação via e-mail.
-              </p>
-              <a href="#" class="card-btn white-font">saiba mais</a>
-            </div>
-            <div class="feat-card-front">
-              <i class="fa-solid fa-circle-dot purple-font"></i>
-              <h3 class="purple-font">Estoque</h3>
-              <p class="purple-font">
-                Sistema de controle de insumos com controle de lotes, validade,
-                itens de consumo interno, matérias-prima, fornecedores,
-                clientes, médicos, atendentes, etc.
-              </p>
-            </div>
-          </div>
-          <div class="feat-card flip">
-            <div class="feat-card-back purple-bg purple-font">
-              <h3 class="white-font">Consultas e Relatórios!</h3>
-              <p class="white-font">
-                Além de faturas de convênio, o sistema fornece o Fluxo de Caixa
-                completo, com despesas fixas e variáveis, lucro, pró-labore e
-                faturamento mínimo desejável.
-              </p>
-              <a href="#" class="card-btn white-font">saiba mais</a>
-            </div>
-            <div class="feat-card-front">
-              <i class="fa-solid fa-calculator purple-font"></i>
-              <h3 class="purple-font">Financeiro</h3>
-              <p class="purple-font">
-                Sistema para gerenciar, conferir, realizar e receber pagamentos,
-                lançar créditos e débitos programados, com muita rapidez e
-                facilidade.
-              </p>
-            </div>
-          </div>
-          <div class="feat-card flip">
-            <div class="feat-card-back purple-bg purple-font">
-              <h3 class="white-font">Segurança e garantia!</h3>
-              <p class="white-font">
-                Preenchimento obrigatório para mais controle na frente de loja!
-                Para geração dos arquivos o sistema faz uma segunda validação,
-                evitando erros.
-              </p>
-              <a href="#" class="card-btn white-font">saiba mais</a>
-            </div>
-            <div class="feat-card-front">
-              <i class="fa-solid fa-list-check purple-font"></i>
-              <h3 class="purple-font">SNGPC</h3>
-              <p class="purple-font">
-                Sistema com comunicação direita ao site da Anvisa, que permite
-                que o envio das movimentações de controlados e inventários sejam
-                feitos com um clique!
-              </p>
-            </div>
-          </div>
-          <div class="feat-card flip">
-            <div class="feat-card-back purple-bg purple-font">
-              <h3 class="white-font">Mais facilidades!</h3>
-              <p class="white-font">
-                O nosso sistema Vitóriasoft Farmácia emite NF-e para vendas e
-                devoluções para empresas e NF-e para fechamento de convênios.
-              </p>
-              <a href="#" class="card-btn white-font">saiba mais</a>
-            </div>
-            <div class="feat-card-front">
-              <i class="fa-solid fa-basket-shopping purple-font"></i>
-              <h3 class="purple-font">Vendas</h3>
-              <p class="purple-font">
-                Permite a realização de vendas de fórmulas e revendas via NF-e,
-                baixando no estoque ou NF-e para consolidação de vendas de
-                convênios.
-              </p>
-            </div>
-          </div>
-          <div class="feat-card flip">
-            <div class="feat-card-back purple-bg purple-font">
-              <h3 class="white-font">Agilliza o atendimento!</h3>
-              <p class="white-font">
-                Há uma segunda parte da tela para outros dados: nome do
-                vendedor, forma de pagamento, convênio, descontos, acréscimos,
-                data e horário de entrega.
-              </p>
-              <a href="#" class="card-btn white-font">saiba mais</a>
-            </div>
-            <div class="feat-card-front">
-              <i class="fa-solid fa-store purple-font"></i>
-              <h3 class="purple-font">Frente de Loja</h3>
-              <p class="purple-font">
-                Sistema de tela para vendedor informar dados relativos à
-                receita, nome do cliente, forma farmacêutica (cápsula, creme,
-                etc.), substâncias e dosagens.
-              </p>
-            </div>
-          </div>
-          <div class="feat-card flip">
-            <div class="feat-card-back purple-bg purple-font">
-              <h3 class="white-font">Flexibilidade!</h3>
-              <p class="white-font">
-                Para você criar promoções e regras de desconto. Solucionar toda
-                a gestão do seu tele-entrega. Gerenciar clientes online, e
-                aceitar pagamento em qualquer loja!
-              </p>
-              <a href="#" class="card-btn white-font">saiba mais</a>
-            </div>
-            <div class="feat-card-front">
-              <i class="fa-solid fa-cash-register purple-font"></i>
-              <h3 class="purple-font">Caixas</h3>
-              <p class="purple-font">
-                Sistema para gerenciar vendas à vista, à prazo e convênio, com
-                opções de parcelamento, homologado para PAF/ECF, Caixa, Cupom
-                Fiscal, com TEF integrado.
-              </p>
-            </div>
-          </div>
-          <div class="feat-card flip">
-            <div class="feat-card-back purple-bg purple-font">
-              <h3 class="white-font">Treinamento online!</h3>
-              <p class="white-font">
-                Acesso remoto e treinamento via skype com gravação de videos
-                para instruir você e a sua equipe a utilizar e personalizar o
-                sistema gerador de relatórios.
-              </p>
-              <a href="#" class="card-btn white-font">saiba mais</a>
-            </div>
-            <div class="feat-card-front">
-              <i class="fa-solid fa-clipboard-list purple-font"></i>
-              <h3 class="purple-font">Relatórios</h3>
-              <p class="purple-font">
-                Sistema gerador de relatórios, com personalização de documentos
-                e fórmulas, onde você define como o sistema organiza seus dados
-                e calcula os seus preços.
-              </p>
-            </div>
-          </div>
-          <div class="feat-card flip">
-            <div class="feat-card-back purple-bg purple-font">
-              <h3 class="white-font">Emissão ilimitada!</h3>
-              <p class="white-font">
-                Não há limite mensal! E além disso, possui entradas com
-                importação de arquivos xml para insumos farmacêuticos,
-                medicamentos e produtos de revenda em geral.
-              </p>
-              <a href="#" class="card-btn white-font">saiba mais</a>
-            </div>
-            <div class="feat-card-front">
-              <i class="fa-solid fa-file-lines purple-font"></i>
-              <h3 class="purple-font">NF-e</h3>
-              <p class="purple-font">
-                Sistema simples e prático para emissão de Nota Fiscal Eletrônica
-                para fórmulas manipuladas e drogaria, com nota de devolução
-                integrada.
-              </p>
-            </div>
-          </div>
-        </div>
+      <div id="contact-img">
+        <img src="images/Site VitoriaSoft novas imagens-05.png" alt="">
       </div>
+    </div>
+  </main>
 
-      <div id="section2" class="container">
-        <div class="container-intro white-font red-bg">
-          <h1 class="white-font">Drogaria</h1>
-          <p>
-            Funcionalidades exclusivas que estão disponíveis para facilitar
-            ainda mais a gestão da sua <strong>Drogaria</strong>.
-          </p>
-        </div>
-
-        <div class="container-feat-cards-span">
-          <div class="feat-card flip">
-            <div class="feat-card-back red-bg red-font">
-              <h3 class="white-font">Os pedidos podem ser repetidos!</h3>
-              <p class="white-font">
-                Avisos de reposição de medicamento e uso contínuo. Vidalink,
-                Horizon, Farmárcia Popular, FuncionalCard, Epharma, Pharmalink.
-              </p>
-              <a href="#" class="card-btn white-font">saiba mais</a>
-            </div>
-            <div class="feat-card-front">
-              <i class="fa-solid fa-file-invoice red-font"></i>
-              <h3 class="red-font">PBM</h3>
-              <p class="red-font">
-                O Vitóriasoft Farmácia está integrado a diversos PBMs: Vale Mais
-                Saúde, Vidalink, Prevsaúde, FuncionalCard, Epharma, Pharmalink
-              </p>
-            </div>
-          </div>
-          <div class="feat-card flip">
-            <div class="feat-card-back red-bg red-font">
-              <h3 class="white-font">Todo o lucro fica com a sua farmácia!</h3>
-              <p class="white-font">
-                Durante o atendimento, o vendedor escolhe os medicamentos, e
-                envia a consulta de todos os itens em uma única autorização de
-                venda!
-              </p>
-              <a href="#" class="card-btn white-font">saiba mais</a>
-            </div>
-            <div class="feat-card-front">
-              <i class="fa-solid fa-pills red-font"></i>
-              <h3 class="red-font">Farmácia Popular</h3>
-              <p class="red-font">
-                Sistema de vendas muito simples e rápido, com comunicação direta
-                ao site da Farmácia Popular.
-              </p>
-            </div>
-          </div>
-          <div class="feat-card flip">
-            <div class="feat-card-back red-bg red-font">
-              <h3 class="white-font">Nota Fiscal de Consumidor Eletrônica</h3>
-              <p class="white-font">
-                O Vitória Farmácia gera NFCe online e sob contigência e está
-                integrado ao SAT.
-              </p>
-              <a href="#" class="card-btn white-font">saiba mais</a>
-            </div>
-            <div class="feat-card-front">
-              <i class="fa-solid fa-file-lines red-font"></i>
-              <h3 class="red-font">NFC-e</h3>
-              <p class="red-font">
-                Sistema de vendas para consumidor final, via checkout com
-                controle de caixa, convênios e crediário.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div id="section3" class="container">
-        <div class="container-intro white-font blue-bg">
-          <h1 class="white-font">Farmácia de Manipulação</h1>
-          <p>
-            Funcionalidades exclusivas que estão disponíveis para facilitar
-            ainda mais a gestão da sua <strong>Farmácia de Manipulação</strong>.
-          </p>
-        </div>
-
-        <div class="container-feat-cards-span">
-          <div class="feat-card flip">
-            <div class="feat-card-back blue-bg blue-font">
-              <h3 class="white-font">
-                Otimiza a preparação magistral de cápsulas!
-              </h3>
-              <p class="white-font">
-                Garante a qualidade e o controle do processo, em conformidade
-                com o Formulário Nacional da Farmacopeia Brasileira.
-              </p>
-              <a href="#" class="card-btn white-font">saiba mais</a>
-            </div>
-            <div class="feat-card-front">
-              <i class="fa-solid fa-weight-scale blue-font"></i>
-              <h3 class="blue-font">Peso médio</h3>
-              <p class="blue-font">
-                Sistema que efetua o cálculo do peso médio magistral e os demais
-                controles estatísticos da amostra, gera relatório e salva os
-                resultados.
-              </p>
-            </div>
-          </div>
-          <div class="feat-card flip">
-            <div class="feat-card-back blue-bg blue-font">
-              <h3 class="white-font">Melhoram o desempenho da equipe!</h3>
-              <p class="white-font">
-                Garantem excelente atendimento com rápida conclusão, e aumentam
-                qualidade de trabalho nos laboratório de manipulação.
-              </p>
-              <a href="#" class="card-btn white-font">saiba mais</a>
-            </div>
-            <div class="feat-card-front">
-              <i class="fa-solid fa-chalkboard-user blue-font"></i>
-              <h3 class="blue-font">Orçamento</h3>
-              <p class="blue-font">
-                Sistema de telas amigáveis que facilitam o atendimento no
-                balcão, com fichas customizadas para a manipulação do
-                medicamento.
-              </p>
-            </div>
-          </div>
-          <div class="feat-card flip">
-            <div class="feat-card-back blue-bg blue-font">
-              <h3 class="white-font">Emissão ilimitada!</h3>
-              <p class="white-font">
-                Não há limite mensal! E além disso, emite NFS-e de vendas de
-                Fórmulas manipuladas, e possui centenas de municípios do Brasil
-                homologados.
-              </p>
-              <a href="#" class="card-btn white-font">saiba mais</a>
-            </div>
-            <div class="feat-card-front">
-              <i class="fa-solid fa-file-lines blue-font"></i>
-              <h3 class="blue-font">NFS-e</h3>
-              <p class="blue-font">
-                Sistema de interface simples, fácil de usar, e um dos mais
-                práticos emissores de Nota Fiscal Eletrônica de serviço do
-                mercado.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div id="sixth-container" class="container purple-bg white-font">
+  <main id="contato" class="hidden">
+    <div id="contact-form-container" class="container">
+      <div id="contact-form">
         <div class="container-intro">
-          <h1 class="white-font">Por que a VitóriaSoft é diferente?</h1>
+          <h1 class="purple-font">Quer falar com a gente?</h1>
+          <p>A mensagem abaixo é enviada direto para o nosso e-mail.</p>
         </div>
-        <div class="container-feat-cards-span">
-          <div class="feat-card">
-            <i class="fa-regular fa-heart white-font"></i>
-            <h3 class="white-font">Somos transparentes</h3>
-            <p class="white-font">
-              Transparência na nossa forma de agir e nos comunicar é uma meta
-              para nós ao tratar os nossos clientes, e também os nossos
-              colaboradores!
-            </p>
-          </div>
-          <div class="feat-card">
-            <i class="fa-solid fa-calendar-days white-font"></i>
-            <h3 class="white-font">Temos experiência</h3>
-            <p class="white-font">
-              Temos a solução completa para a gestão da sua farmácia, porque
-              somamos mais de 25 anos de experiência no mercado, e estamos
-              presentes em mais de 14 estados do Brasil.
-            </p>
-          </div>
-          <div class="feat-card">
-            <i class="fa-regular fa-comments white-font"></i>
-            <h3 class="white-font">Pensamos em você</h3>
-            <p class="white-font">
-              Para oferecer a melhor experiência em relação à gestão da sua
-              farmácia, aprimoramos nosso sistema através dos retornos e
-              considerações que recebemos de cada um dos nossos clientes.
-            </p>
-          </div>
-        </div>
+        <form action="">
+          <input type="text" placeholder="Nome" required>
+          <input type="email" placeholder="E-mail" required>
+          <input type="number" placeholder="Telefone">
+          <label for="">Escreva sua mensagem abaixo:
+            <textarea name="" id="" cols="100" rows="1" required></textarea>
+          </label>
+          <button id="submit-btn" type="submit" class="white-font red-bg">
+            <i class="fa-solid fa-envelope"></i> <strong>ENVIAR</strong>
+          </button>
+        </form>
       </div>
-
-      <div id="contact-form-container" class="container">
-        <div id="contact-form">
-            <div class="container-intro">
-                <h1 class="purple-font">Quer falar com a gente?</h1>
-                <p>A mensagem abaixo é enviada direto para o nosso e-mail.</p>
-            </div>
-            <form action="">
-                <input type="text" placeholder="Nome" required>
-                <input type="email" placeholder="E-mail" required>
-                <input type="number" placeholder="Telefone" >
-                <label for="">Escreva sua mensagem abaixo:
-                    <textarea name="" id="" cols="100" rows="1" required></textarea>
-                </label>
-                <button id="submit-btn" type="submit" class="white-font red-bg">
-                  <i class="fa-solid fa-envelope"></i> <strong>ENVIAR</strong>
-                </button>
-            </form>
-        </div>
-        <div id="contact-img">
-            <img src="images/Site VitoriaSoft novas imagens-05.png" alt="">
-        </div>
+      <div id="contact-img">
+        <img src="images/Site VitoriaSoft novas imagens-05.png" alt="">
       </div>
-    </main>
+    </div>
 
-    <main id="contato" class="hidden">
-      <div id="contact-form-container" class="container">
-        <div id="contact-form">
-            <div class="container-intro">
-                <h1 class="purple-font">Quer falar com a gente?</h1>
-                <p>A mensagem abaixo é enviada direto para o nosso e-mail.</p>
-            </div>
-            <form action="">
-                <input type="text" placeholder="Nome" required>
-                <input type="email" placeholder="E-mail" required>
-                <input type="number" placeholder="Telefone" >
-                <label for="">Escreva sua mensagem abaixo:
-                    <textarea name="" id="" cols="100" rows="1" required></textarea>
-                </label>
-                <button id="submit-btn" type="submit" class="white-font red-bg">
-                  <i class="fa-solid fa-envelope"></i> <strong>ENVIAR</strong>
-                </button>
-            </form>
-        </div>
-        <div id="contact-img">
-            <img src="images/Site VitoriaSoft novas imagens-05.png" alt="">
-        </div>
+  </main>
+
+  <main id="sobre" class="hidden">
+    <div id="sobre-content">
+      <div id="sobre-text">
+        <h1><span class="purple-font">1988: Espírito Santo</span> <br>2021: alcance nacional</h1>
+        <p>A VitóriaSoft do Brasil surgiu em Vitória, consolidada em casa e lastreada em produtos de qualidade,
+          se lançou nacionalmente em 2000, a partir de sua presença expressiva na décima-primeira edição da Racine
+          Expo, feira especializada voltada ao segmento de farmácias, realizada em São Paulo.
+          <br><br>
+          Uma ação que tem mostrado enorme sucesso, pois os produtos da VitóriaSoft do Brasil estão rodando hoje em
+          centenas
+          de clientes instalados nas capitais e nas mais importantes cidades localizadas de Norte a Sul e de Leste a
+          Oeste do nosso Brasil.
+        </p>
       </div>
-
-    </main>
-
-    <main id="sobre" class="hidden">
-      <div id="sobre-content">
-        <div id="sobre-text">
-          <h1><span class="purple-font">1988: Espírito Santo</span> <br>2021: alcance nacional</h1>
-          <p>A VitóriaSoft do Brasil surgiu em Vitória, consolidada em casa e lastreada em produtos de qualidade, 
-            se lançou nacionalmente em 2000, a partir de sua presença expressiva na décima-primeira edição da Racine 
-            Expo, feira especializada voltada ao segmento de farmácias, realizada em São Paulo. 
-            <br><br> 
-            Uma ação que tem mostrado enorme sucesso, pois os produtos da VitóriaSoft do Brasil estão rodando hoje em centenas 
-            de clientes instalados nas capitais e nas mais importantes cidades localizadas de Norte a Sul e de Leste a 
-            Oeste do nosso Brasil.</p>
-        </div>
-        <div id="sobre-img">
-          <img src="images/OLD/sobre-img.png" alt="">
-        </div>
+      <div id="sobre-img">
+        <img src="images/OLD/sobre-img.png" alt="">
       </div>
-    </main>
+    </div>
+  </main>
 
-    <main id="faqs" class="hidden">
-      <h1 class="purple-font">Dúvidas frequentes</h1>
-      <p id="faqs-subtitle">Se não encontrar a resposta que você procura, por favor, entre em contato!</p>
-      <div id="faq-container">
-        <div class="faq">
-          <button href="#" class="faq-toggle">
-            <i class="fa-solid fa-caret-right"></i>
-            <h3 class="faq-title">1. Como surgiu o Sistema Vitóriasoft Farmácia?</h3>
-          </button>
-          <p class="faq-text grey-font">O Sistema de Farmácia da VitóriaSoft do Brasil roda na plataforma Windows desde 1995 e na nuvem no VSCloud desde 2017. <br><br>
-            Foi desenvolvido com uma interface amigável, simples e fácil de usar, permitindo que, com poucos cliques do mouse, o usuário tenha acesso a todas as suas funções.</p>
-        </div>
-        <hr>
-
-        <div class="faq">
-          <button href="#" class="faq-toggle">
-            <i class="fa-solid fa-caret-right"></i>
-            <h3 class="faq-title">2. Eu já utilizo um sistema diferente e preciso aproveitar o meu banco de dados.
-              É possível aproveitar essas informações? Como vocês tratam isso?</h3>
-          </button>
-          <p class="faq-text grey-font">Sim. É possível reutilizar as informações.
-            <br><br>
-            A VitóriaSoft do Brasil faz a importação de seus dados para a utilização no VitóriaSoft Farmácia.
-            <br><br>
-            Exemplos do que podemos importar: lista de clientes, cadastro de médicos, relação de substâncias, rol de embalagens e seus componentes, estoque de produtos semi-elaborados com suas composições padrão (Fórmulas padrão) dos veículos, bases, cápsulas etc. Mesmo listas em formato Excel podem ser importadas para o Vitóriasoft Farmácia.</p>            
-        </div>
-        <hr>
-        
-        <div class="faq">
-          <button href="#" class="faq-toggle">
-            <i class="fa-solid fa-caret-right"></i>
-            <h3 class="faq-title">3. É difícil instalar e implantar o Sistema?</h3>
-          </button>
-          <p class="faq-text grey-font">Não. Pode ser instalado em até cinco minutos.
-            <br><br>
-            Para a implantação com o aproveitamento do banco de dados de outros Sistemas, o trabalho se reduz em 90%, implicando apenas na escolha e personalização (configuração) do Protocolo, Ficha de Pesagem, Ordem de Produção, Rótulos e Etiquetas de fracionamento, dentre os modelos existentes no Sistema.
-            <br><br>
-            Caso a Farmácia não utilize nenhum Sistema, a implantação também é simples, pois o VitóriaSoft Farmácia já vem com uma lista de substâncias e seus sinônimos, restando para o usuário apenas a digitação da composição de seus veículos e bases, excipientes e outras formulações de estoque estratégico.
-            <br><br>
-            E a escolha e personalização (configuração) do Protocolo, Ficha de Pesagem, Ordem de Produção, Rótulos e Etiquetas de fracionamento dentre os modelos existentes.</p>            
-        </div>
-        <hr>
-        
-        <div class="faq">
-          <button href="#" class="faq-toggle">
-            <i class="fa-solid fa-caret-right"></i>
-            <h3 class="faq-title">4. Como o Sistema VitóriaSoft Farmácia calcula os preços das fórmulas encomendadas no balcão?</h3>
-          </button>
-          <p class="faq-text grey-font">O módulo de Cálculo de Preços do VitóriaSoft Farmácia é livre, ficando a critério da empresa determinar a fórmula como deve ser feito este cálculo.
-            <br><br>
-            A fórmula padrão é a seguinte:
-            <br><br>
-            Preço de venda da matéria-prima (corrigido)<br>
-            +<br>
-            Preço da embalagem<br>
-            +<br>
-            Preço das cápsulas<br>
-            +<br>
-            Fator de custo operacional<br>
-            =<br>
-            Valor da fórmula.
-            <br><br>
-            O lucro da empresa será determinado pela marcação da matéria-prima mais a marcação das embalagens e das cápsulas.
-            <br><br>
-            O Sistema permite ainda uma segunda opção para cálculos de preços, através de planilha de custo, com rateio dos centros de custos somados ao valor da matéria-prima, embalagens, cápsulas e o percentual de lucro desejado por fórmula farmacêutica.
-            <br><br>
-            O Sistema VitóriaSoft Farmácia calcula os preços das matérias primas fazendo a correção do grau de pureza (concentração), fator de equivalência ácido/base, quantidade de unidades internacionais (UI) por miligrama e a diluição quando necessário.
-            <br><br>
-            E soma a esses preços o valor das embalagens, cápsulas e fator de custo operacional, ou faz o rateio dos centros de custos somando o percentual de lucro desejado por forma farmacêutica.
-            <br><br>
-            Para calcular os preços das fórmulas básicas (padrão) — tais como cremes, géis, loções, shampoos, produtos semi-elaborados ou elaborados etc. —, o Sistema utiliza os preços das matérias-primas com as respectivas correções, podendo calcular ainda pelo preço de venda ou pelo preço de custo.</p>            
-        </div>
-        <hr>
-        
-        <div class="faq">
-          <button href="#" class="faq-toggle">
-            <i class="fa-solid fa-caret-right"></i>
-            <h3 class="faq-title">5. Como fazemos para corrigir os preços dos produtos com composição (fórmula) padrão, isto é, para produção sob demanda ou de produtos semi-elaborados ou elaborados de produção para estoque estratégico?</h3>
-          </button>
-          <p class="faq-text grey-font">Quando processamos uma entrada de substâncias (matéria-prima) no VitóriaSoft Farmácia, o Sistema nos permite fazer a gerência de preços numa tela onde nos é mostrado o preço anterior, a marcação (margem de lucro) e o preço atual, e podemos escolher se queremos corrigir o preço ou a marcação.
-            <br><br>
-            Quando escolhemos corrigir o preço, o Sistema verificará, item a item, se estes entram na composição de alguma fórmula padrão.
-            <br><br>
-            Em caso positivo, o Sistema informará que o item em questão entra na composição de fórmulas bases, perguntando se você quer corrigir o preço dos produtos constantes em sua composição padrão, o princípio ativo em questão.
-            <br><br>
-            Fazendo a opção pela correção dos preços, estes serão automaticamente atualizados.</p>            
-        </div>
-        <hr>
-        
-        <div class="faq">
-          <button href="#" class="faq-toggle">
-            <i class="fa-solid fa-caret-right"></i>
-            <h3 class="faq-title">6. Como funciona o Sistema para as fórmulas com substâncias de controle especial (Portaria 344)?</h3>
-          </button>
-          <p class="faq-text grey-font">Quando se digita uma fórmula com substâncias de controle especial, o Sistema mostra, para cada categoria de controlado, não só tipo de talonário, mas também qualquer outro tipo de informação que for necessária, tais como conferir a data da receita, verificar se a mesma está assinada ou se o carimbo do médico está legível, dose máxima e dose mínima, ou ainda qualquer outro procedimento que se queira incluir.</p>            
-        </div>
-        <hr>
-        
-        <div class="faq">
-          <button href="#" class="faq-toggle">
-            <i class="fa-solid fa-caret-right"></i>
-            <h3 class="faq-title">7. O VitóriaSoft Farmácia escolhe automaticamente a cápsula e a embalagem para as fórmulas encomendadas?</h3>
-          </button>
-          <p class="faq-text grey-font">A escolha das embalagens e das cápsulas é feita automaticamente.
-            <br><br>
-            O tipo, a capacidade e a cor das cápsulas e o tipo, a capacidade e a cor das embalagens podem ser escolhidas de acordo com a forma farmacêutica, de acordo com os princípios ativos, de acordo com as características fisico-químicas ou necessidades da formulação, ou ainda de acordo com as preferências do cliente.
-            <br><br>
-            Para a forma farmacêutica “cápsula”, o Sistema escolhe o excipiente ideal, calculando a quantidade necessária para completar o volume da cápsula.</p>            
-        </div>
-        <hr>
-        
-        <div class="faq">
-          <button href="#" class="faq-toggle">
-            <i class="fa-solid fa-caret-right"></i>
-            <h3 class="faq-title">8. Como o Sistema escolhe as cápsulas e a embalagem de uma fórmula?</h3>
-          </button>
-          <p class="faq-text grey-font">Não só escolhe o tipo de cápsula como também a cor da da mesma e o excipiente ideal de acordo com a substância.
-            <br><br>
-            Calcula ainda a quantidade de excipiente necessário, escolhendo a embalagem e todos os seus componentes, tais como tipo de tampa, etiquetas, desumidificador, desodorisador, algodão, lacre, etc.</p>            
-        </div>
-        <hr>
-        
-        <div class="faq">
-          <button href="#" class="faq-toggle">
-            <i class="fa-solid fa-caret-right"></i>
-            <h3 class="faq-title">9. O Sistema calcula “quantidade suficiente para” (QSP) cremes e loções e corrige diluições?</h3>
-          </button>
-          <p class="faq-text grey-font">O cálculo da QSP é uma coisa intrínseca no Sistema, não só para cremes e loções, mas para qualquer tipo de veículo ou substância que se fizerem necessários.
-            <br><br>
-            O Sistema VitóriaSoft Farmácia corrige diluições, concentração (grau de pureza), fator de equivalência ácido/base e faz conversão de unidades internacionais (UI) para miligrama.</p>            
-        </div>
-        <hr>
-        
-        <div class="faq">
-          <button href="#" class="faq-toggle">
-            <i class="fa-solid fa-caret-right"></i>
-            <h3 class="faq-title">10. Como é uma Ficha de Pesagem de uma fórmula?</h3>
-          </button>
-          <p class="faq-text grey-font">Ao se encomendar uma fórmula com o VitóriaSoft Farmácia, todas as etapas de documentos — Protocolo, Rótulo, Ficha de Pesagem, Registros de Consumo etc. — são automaticamente elaboradas pelo Sistema, isto é, ficam registradas e prontas para a impressão.
-            <br><br>
-            A Ficha de Pesagem (produção sob demanda) vem com o nome do paciente, o nome do médico, número do CRM, data, hora e local da encomenda, data e hora e local de entrega. A composição da fórmula traz os nomes dos princípios ativos e seus lotes com a quantidade receitada e a quantidade corrigida de cada um.
-            <br><br>
-            Indica ainda qual a cápsula ou a embalagem, além de todas as informações técnicas e cuidados para a manipulação da fórmula.
-            <br><br>
-            É importante lembrar que a Ficha de Pesagem, assim como qualquer documento gerado pelo VitóriaSoft Farmácia, pode ser editada, configurada e personalizada pelo próprio usuário, fazendo com que os Protocolos, Ficha de Pesagem, Rótulo, Ordem de Produção, Etiquetas de Fracionamento, Etiquetas de Estocagem, Relatórios, Ordem de Compra, Cotação, enfim, todos os documentos reflitam a imagem da empresa.</p>            
-        </div>
-        <hr>
-        
-        <div class="faq">
-          <button href="#" class="faq-toggle">
-            <i class="fa-solid fa-caret-right"></i>
-            <h3 class="faq-title">11. O Sistema emite os relatórios, mapas, livros e balanços das substâncias e medicamentos de controle especial?</h3>
-          </button>
-          <p class="faq-text grey-font">O Sistema confecciona todos os livros de controle para substâncias psicoativas e outras, assim como todos os balanços e mapas de entrada, saída, transformação e produção, seguindo rigorosamente os modelos da Anvisa.</p>            
-        </div>
-        <hr>
-        
-        <div class="faq">
-          <button href="#" class="faq-toggle">
-            <i class="fa-solid fa-caret-right"></i>
-            <h3 class="faq-title">12. Quais são os relatórios que o Sistema emite?</h3>
-          </button>
-          <p class="faq-text grey-font">Os relatórios no Sistema VitóriaSoft Farmácia são criados através de um Gerador de Relatórios de última geração.
-            <br><br>
-            Isto quer dizer que o usuário pode emitir qualquer relatório que for necessário, ficando sob seu domínio a edição do modelo, tipo, layout etc.</p>            
-        </div>
-        <hr>
-        
-        <div class="faq">
-          <button href="#" class="faq-toggle">
-            <i class="fa-solid fa-caret-right"></i>
-            <h3 class="faq-title">13. O Sistema controla malas-diretas para serem enviadas aos médicos e clientes?</h3>
-          </button>
-          <p class="faq-text grey-font">A mala-direta para clientes, fornecedores e médicos pode ser feita por especialidade médica, cidade, bairro, rua, data de aniversário etc.
-            <br><br>
-            O Sistema permite que textos padronizados sejam gravados e impressos juntos com a mala-direta.</p>            
-        </div>
-        <hr>
-        
-        <div class="faq">
-          <button href="#" class="faq-toggle">
-            <i class="fa-solid fa-caret-right"></i>
-            <h3 class="faq-title">14. O Sistema mostra os produtos não usados?</h3>
-          </button>
-          <p class="faq-text grey-font">O Sistema de relatórios do VitóriaSoft Farmácia emite relatórios de ranking de consumo de substâncias e produtos, assim como o ranking de clientes, mostrando os melhores e os ausentes, por exemplo.
-            <br><br>
-            O Sistema avisa que tipo de etiqueta extra tem que ser usada como, por exemplo, “guardar na geladeira”, “medicamento controlado” etc.
-            <br><br>
-            Todo e qualquer tipo de etiqueta, acessório, embalagem e seus componentes, técnica de manipulação ou cuidados especiais durante o processo pode ser incluído automaticamente na Ficha de Pesagem, mediante prévia configuração do Sistema.
-            <br><br>
-            A Ficha de Pesagem é preparada para ser um roteiro de manipulação, mostrando, substâncias da formulação (princípios ativos e as substâncias adicionais) e indicando seus lotes e as quantidades a serem pesadas, devidamente corrigidas; técnicas e cuidados para a manipulação do produto, inclusive a embalagem e seus componentes; tipo, tamanho e cor da cápsula; etiquetas de advertências; etc.</p>            
-        </div>
-        <hr>
-        
-        <div class="faq">
-          <button href="#" class="faq-toggle">
-            <i class="fa-solid fa-caret-right"></i>
-            <h3 class="faq-title">15. O Sistema emite relatório informando qual médico enviou mais receitas para a farmácia e qual foi o produto mais vendido?</h3>
-          </button>
-          <p class="faq-text grey-font">Os relatórios podem ser os mais variados possíveis, pois é o usuário mesmo quem os cria de acordo com as informações que desejar.
-            <br><br>
-            Podem ser emitidos relatórios sobre a quantidade de receitas, fórmulas, faturamento por médico ou especialidade, por representante de visitação médica, por loja, por atendente, por substância etc.
-            <br><br>
-            Enfim, pode-se criar o relatório que se fizer necessário.</p>            
-        </div>
-        <hr>
-        
-        <div class="faq">
-          <button href="#" class="faq-toggle">
-            <i class="fa-solid fa-caret-right"></i>
-            <h3 class="faq-title">16. O Sistema informa quantas fórmulas foram apenas orçadas e não foram mandadas fazer?</h3>
-          </button>
-          <p class="faq-text grey-font">Sim. Ele mostra quantos orçamentos foram confirmados ou não, por atendente, por médico, por loja, por substância, etc.</p>            
-        </div>
-        <hr>
-        
-        <div class="faq">
-          <button href="#" class="faq-toggle">
-            <i class="fa-solid fa-caret-right"></i>
-            <h3 class="faq-title">17. O Sistema apresenta curva ABC do estoque (estoque máximo e mínimo)?</h3>
-          </button>
-          <p class="faq-text grey-font">O Sistema cria e gerencia a curva ABC de estoque, sugerindo as quantidades que devem ser compradas de matéria-prima ou produto industrializado, levando em consideração a sazonalidade no consumo dos produtos, isto é, indicando quando e quanto devemos comprar de cada produto ou matéria-prima de acordo com a época do ano.</p>            
-        </div>
-        <hr>
-        
-        <div class="faq">
-          <button href="#" class="faq-toggle">
-            <i class="fa-solid fa-caret-right"></i>
-            <h3 class="faq-title">18. Quando um cliente retorna, posso verificar seu último pedido, qual cor de cápsula que gosta de usar, etc.?</h3>
-          </button>
-          <p class="faq-text grey-font">O VitóriaSoft Farmácia é um Sistema que utiliza banco de dados SQL que permite que todas as informações de movimentos de venda, compra, produção, perda, financeiro etc. fiquem registradas, sem necessidade de limpar os arquivos.
-            <br><br>
-            Todas as informações da empresa estão sempre disponíveis para o acesso imediato.
-            <br><br>
-            A Ficha de Cliente contém todas as informações de compras de medicamentos, atenção farmacêutica etc.
-            <br><br>
-            Isto permite uma rastreabilidade total e perfeita de todos os medicamentos consumidos, suas formulações, qual o médico que receitou, quais os lotes das substâncias utilizadas, quem manipulou, quem encomendou, a data em que encomendou e quando retirou o medicamento da farmácia, qual o valor pago etc.</p>            
-        </div>
-        <hr>
-        
-        <div class="faq">
-          <button href="#" class="faq-toggle">
-            <i class="fa-solid fa-caret-right"></i>
-            <h3 class="faq-title">19. O Sistema avisa erro de dosagem de receitas médicas, tendo armazenado dosagens mínimas e máximas permitidas?</h3>
-          </button>
-          <p class="faq-text grey-font">O Sistema avisa quando as dosagens mínimas ou máximas são ultrapassadas e que devem ser relatadas ao farmacêutico para as devidas providências.
-            <br><br>
-            As dosagens mínimas e máximas podem ser indicadas também por forma farmacêutica, isto é, cada substância pode ter várias dosagens mínimas e máximas de acordo com o tipo de formulação.</p>            
-        </div>
-        <hr>
-        
-        <div class="faq">
-          <button href="#" class="faq-toggle">
-            <i class="fa-solid fa-caret-right"></i>
-            <h3 class="faq-title">20. A Ficha de Produção (Ficha de Pesagem) apresenta a fórmula e lembretes, quando necessários, de algumas matéria-primas?
-              Por exemplo: quando registra-se para fazer um creme com hidroquinona, chama atenção para o uso de metabissulfito de sódio?
-              Calcula a quantidade e o preço automaticamente no orçamento, não correndo risco de dar um valor menor do que será usado para produzir?</h3>
-          </button>
-          <p class="faq-text grey-font">Na ficha de cada substância cadastrada no Sistema podemos informar as substâncias adicionais, isto é, substâncias que serão acrescentadas nas formulações para impedir a oxidação, facilitar a manipulação, melhorar o sabor ou o odor, aumentar a absorção etc.
-            <br><br>
-            Elas podem ser acrescentadas de acordo com a forma farmacêutica, ou ainda de acordo com outros princípios ativos que estejam na composição da fórmula.
-            <br><br>
-            Por exemplo: hidroquinona com acido retinóico em loção, usar antioxidante X; hidroquinona com ácido glicólico em loção, usar antioxidante Y.
-            <br><br>
-            No Sistema VitóriaSoft Farmácia, podemos usar vários prazos de validade para uma mesma substância de acordo com a forma farmacêutica da formulação.
-            <br><br>
-            Por exemplo: cetoconazol cápsulas, validade 180 dias; cetoconazol shampoo, validade 60 dias; cetoconazol creme, validade 15 dias.
-            <br><br>
-            Ao calcular os preços das fórmulas, o Sistema leva em consideração sua composição e todas as substâncias adicionais que serão acrescentadas, fazendo suas respectivas correções (concentração, fator de equivalência, diluição, UI por miligrama, marcação ou margem de lucro, taxa do dólar).
-            <br><br>
-            E soma a isto o preço das embalagens, etiquetas, acessórios etc., acrescentando o custo operacional (custo fixo), formando assim o preço final de cada fórmula.
-            <br><br>
-            O Sistema permite ainda uma segunda modalidade de cálculo dos preços das fórmulas através de centros de custos com a indicação do percentual de lucro desejado.
-            <br><br>
-            Faz também o rateio dos valores destes centros, acrescentando o valor das matérias-primas, das embalagens e dos acessórios e o percentual de lucro, formando o preço final da fórmula.
-            <br><br>
-            O Sistema VitóriaSoft Farmácia apresenta para cada preço de fórmula uma planilha de custo, descrevendo o valor da matéria-prima, embalagem, acessórios, o custo operacional fixo ou por centro de custo, e qual o valor do lucro.</p>            
-        </div>
-        <hr>
-        
-        <div class="faq">
-          <button href="#" class="faq-toggle">
-            <i class="fa-solid fa-caret-right"></i>
-            <h3 class="faq-title">21. Existe ficha de produção para produtos semi-acabados e acabados com produção de lote?</h3>
-          </button>
-          <p class="faq-text grey-font">O Sistema emite Ordem de Produção com lote para todas os itens de estoque que tenham composição padrão (fórmula padrão), permitindo ainda que, na mesma, seja impressa a técnica, observações e cuidados, embalagens, etiquetas e relatórios de produção.
-            <br><br>
-            O Sistema informa ainda os itens de estoque que tenham composição padrão e possam ser produzidos sob demanda.
-            <br><br>
-            Isto é: só serão produzidos quando houver encomenda e a sua fórmula será impressa na ficha de pesagem do medicamento encomendado, proporcional à quantidade receitada.
-            <br><br>
-            Isto é muito útil na preparação de fórmulas com prazo de validade curto ou de composição simples, que é comumente preparada na hora da manipulação — por exemplo: álcool a 50%, pasta d’água —, ou para excipiente de cápsulas que, através destes recursos, poderão ser preparados na hora da manipulação da fórmula.</p>            
-        </div>
-        <hr>
-        
-        <div class="faq">
-          <button href="#" class="faq-toggle">
-            <i class="fa-solid fa-caret-right"></i>
-            <h3 class="faq-title">22. Caso a farmácia tenha o equipamento apropriado, o Sistema faz leitura óptica de cada matéria-prima sem risco de troca de princípio ativo?</h3>
-          </button>
-          <p class="faq-text grey-font">O VitóriaSoft Farmácia não só lê códigos de barras como também cria os mesmos para Protocolos, Ficha de Pesagem, Ordem de Produção e emite Etiquetas de Fracionamento com essa informação. 
-            <br><br>
-            O VitóriaSoft Farmácia está habilitado para a automação completa da farmácia, da frente de loja ao setor do processo (laboratórios), através de microterminais e de leitores de código de barra, fazendo o gerenciamento do tempo de produção em cada estágio de produção, desde a encomenda da fórmula, passando pela triagem, impressão de Fichas de Pesagem, rótulos, pesagens da matéria-prima, manipulação da fórmula, embalagem, conferência e entrega. 
-            <br><br>
-            Interligando as balanças e os microterminais ao servidor de rede, propicia a gerência de todo o fluxo produtivo, racionalizando tempo de produção e permitindo a localização, isto é, a identificação do estágio de produção de uma determinada fórmula no fluxo de trabalho da empresa. 
-            <br><br>
-            O microterminal substitui o microcomputador nos laboratórios de produção, com a vantagem de custar um terço do valor de um microcomputador, sendo autorizado pela Anvisa para funcionar dentro dos laboratórios por ser blindado e não possuir ventilador interno, não causando assim a contaminação do ambiente por dispersão de pós.</p>            
-        </div>
-        <hr>
-
-
+  <main id="faqs" class="hidden">
+    <h1 class="purple-font">Dúvidas frequentes</h1>
+    <p id="faqs-subtitle">Se não encontrar a resposta que você procura, por favor, entre em contato!</p>
+    <div id="faq-container">
+      <div class="faq">
+        <button href="#" class="faq-toggle">
+          <i class="fa-solid fa-caret-right"></i>
+          <h3 class="faq-title">1. Como surgiu o Sistema Vitóriasoft Farmácia?</h3>
+        </button>
+        <p class="faq-text grey-font">O Sistema de Farmácia da VitóriaSoft do Brasil roda na plataforma Windows desde
+          1995 e na nuvem no VSCloud desde 2017. <br><br>
+          Foi desenvolvido com uma interface amigável, simples e fácil de usar, permitindo que, com poucos cliques do
+          mouse, o usuário tenha acesso a todas as suas funções.</p>
       </div>
+      <hr>
 
-    </main>
-
-    <footer class="white-font">
-      <div id="footer-contact-info">
-        <p>VitóriaSoft do Brasil</p>
-        <br>
-        <p>(27) 2121-0045</p>
-        <p>vitoriasoft@vitoriasoft.com.br</p>
-        <p>vendas@vitoriasoft.com.br</p>
-        <br>
-        <p>🇧🇷 Serra – ES</p>
+      <div class="faq">
+        <button href="#" class="faq-toggle">
+          <i class="fa-solid fa-caret-right"></i>
+          <h3 class="faq-title">2. Eu já utilizo um sistema diferente e preciso aproveitar o meu banco de dados.
+            É possível aproveitar essas informações? Como vocês tratam isso?</h3>
+        </button>
+        <p class="faq-text grey-font">Sim. É possível reutilizar as informações.
+          <br><br>
+          A VitóriaSoft do Brasil faz a importação de seus dados para a utilização no VitóriaSoft Farmácia.
+          <br><br>
+          Exemplos do que podemos importar: lista de clientes, cadastro de médicos, relação de substâncias, rol de
+          embalagens e seus componentes, estoque de produtos semi-elaborados com suas composições padrão (Fórmulas
+          padrão) dos veículos, bases, cápsulas etc. Mesmo listas em formato Excel podem ser importadas para o
+          Vitóriasoft Farmácia.
+        </p>
       </div>
-      <div id="footer-links">        
-          <a href="#" target="_blank">Início</a>
-          <a href="#" target="_blank">FAQ</a>
-          <a href="https://instagram.com/vitoriasoftdobrasil" target="_blank">Instagram</a>        
-          <a href="#" target="_blank">Mensagem Direta</a>
-          <a href="#" target="_blank">Sobre</a>
-          <a href="https://www.youtube.com/channel/UC2oB3tIlO49pMC_uJxvcb5w" target="_blank">YouTube</a>
+      <hr>
+
+      <div class="faq">
+        <button href="#" class="faq-toggle">
+          <i class="fa-solid fa-caret-right"></i>
+          <h3 class="faq-title">3. É difícil instalar e implantar o Sistema?</h3>
+        </button>
+        <p class="faq-text grey-font">Não. Pode ser instalado em até cinco minutos.
+          <br><br>
+          Para a implantação com o aproveitamento do banco de dados de outros Sistemas, o trabalho se reduz em 90%,
+          implicando apenas na escolha e personalização (configuração) do Protocolo, Ficha de Pesagem, Ordem de
+          Produção, Rótulos e Etiquetas de fracionamento, dentre os modelos existentes no Sistema.
+          <br><br>
+          Caso a Farmácia não utilize nenhum Sistema, a implantação também é simples, pois o VitóriaSoft Farmácia já vem
+          com uma lista de substâncias e seus sinônimos, restando para o usuário apenas a digitação da composição de
+          seus veículos e bases, excipientes e outras formulações de estoque estratégico.
+          <br><br>
+          E a escolha e personalização (configuração) do Protocolo, Ficha de Pesagem, Ordem de Produção, Rótulos e
+          Etiquetas de fracionamento dentre os modelos existentes.
+        </p>
+      </div>
+      <hr>
+
+      <div class="faq">
+        <button href="#" class="faq-toggle">
+          <i class="fa-solid fa-caret-right"></i>
+          <h3 class="faq-title">4. Como o Sistema VitóriaSoft Farmácia calcula os preços das fórmulas encomendadas no
+            balcão?</h3>
+        </button>
+        <p class="faq-text grey-font">O módulo de Cálculo de Preços do VitóriaSoft Farmácia é livre, ficando a critério
+          da empresa determinar a fórmula como deve ser feito este cálculo.
+          <br><br>
+          A fórmula padrão é a seguinte:
+          <br><br>
+          Preço de venda da matéria-prima (corrigido)<br>
+          +<br>
+          Preço da embalagem<br>
+          +<br>
+          Preço das cápsulas<br>
+          +<br>
+          Fator de custo operacional<br>
+          =<br>
+          Valor da fórmula.
+          <br><br>
+          O lucro da empresa será determinado pela marcação da matéria-prima mais a marcação das embalagens e das
+          cápsulas.
+          <br><br>
+          O Sistema permite ainda uma segunda opção para cálculos de preços, através de planilha de custo, com rateio
+          dos centros de custos somados ao valor da matéria-prima, embalagens, cápsulas e o percentual de lucro desejado
+          por fórmula farmacêutica.
+          <br><br>
+          O Sistema VitóriaSoft Farmácia calcula os preços das matérias primas fazendo a correção do grau de pureza
+          (concentração), fator de equivalência ácido/base, quantidade de unidades internacionais (UI) por miligrama e a
+          diluição quando necessário.
+          <br><br>
+          E soma a esses preços o valor das embalagens, cápsulas e fator de custo operacional, ou faz o rateio dos
+          centros de custos somando o percentual de lucro desejado por forma farmacêutica.
+          <br><br>
+          Para calcular os preços das fórmulas básicas (padrão) — tais como cremes, géis, loções, shampoos, produtos
+          semi-elaborados ou elaborados etc. —, o Sistema utiliza os preços das matérias-primas com as respectivas
+          correções, podendo calcular ainda pelo preço de venda ou pelo preço de custo.
+        </p>
+      </div>
+      <hr>
+
+      <div class="faq">
+        <button href="#" class="faq-toggle">
+          <i class="fa-solid fa-caret-right"></i>
+          <h3 class="faq-title">5. Como fazemos para corrigir os preços dos produtos com composição (fórmula) padrão,
+            isto é, para produção sob demanda ou de produtos semi-elaborados ou elaborados de produção para estoque
+            estratégico?</h3>
+        </button>
+        <p class="faq-text grey-font">Quando processamos uma entrada de substâncias (matéria-prima) no VitóriaSoft
+          Farmácia, o Sistema nos permite fazer a gerência de preços numa tela onde nos é mostrado o preço anterior, a
+          marcação (margem de lucro) e o preço atual, e podemos escolher se queremos corrigir o preço ou a marcação.
+          <br><br>
+          Quando escolhemos corrigir o preço, o Sistema verificará, item a item, se estes entram na composição de alguma
+          fórmula padrão.
+          <br><br>
+          Em caso positivo, o Sistema informará que o item em questão entra na composição de fórmulas bases, perguntando
+          se você quer corrigir o preço dos produtos constantes em sua composição padrão, o princípio ativo em questão.
+          <br><br>
+          Fazendo a opção pela correção dos preços, estes serão automaticamente atualizados.
+        </p>
+      </div>
+      <hr>
+
+      <div class="faq">
+        <button href="#" class="faq-toggle">
+          <i class="fa-solid fa-caret-right"></i>
+          <h3 class="faq-title">6. Como funciona o Sistema para as fórmulas com substâncias de controle especial
+            (Portaria 344)?</h3>
+        </button>
+        <p class="faq-text grey-font">Quando se digita uma fórmula com substâncias de controle especial, o Sistema
+          mostra, para cada categoria de controlado, não só tipo de talonário, mas também qualquer outro tipo de
+          informação que for necessária, tais como conferir a data da receita, verificar se a mesma está assinada ou se
+          o carimbo do médico está legível, dose máxima e dose mínima, ou ainda qualquer outro procedimento que se
+          queira incluir.</p>
+      </div>
+      <hr>
+
+      <div class="faq">
+        <button href="#" class="faq-toggle">
+          <i class="fa-solid fa-caret-right"></i>
+          <h3 class="faq-title">7. O VitóriaSoft Farmácia escolhe automaticamente a cápsula e a embalagem para as
+            fórmulas encomendadas?</h3>
+        </button>
+        <p class="faq-text grey-font">A escolha das embalagens e das cápsulas é feita automaticamente.
+          <br><br>
+          O tipo, a capacidade e a cor das cápsulas e o tipo, a capacidade e a cor das embalagens podem ser escolhidas
+          de acordo com a forma farmacêutica, de acordo com os princípios ativos, de acordo com as características
+          fisico-químicas ou necessidades da formulação, ou ainda de acordo com as preferências do cliente.
+          <br><br>
+          Para a forma farmacêutica “cápsula”, o Sistema escolhe o excipiente ideal, calculando a quantidade necessária
+          para completar o volume da cápsula.
+        </p>
+      </div>
+      <hr>
+
+      <div class="faq">
+        <button href="#" class="faq-toggle">
+          <i class="fa-solid fa-caret-right"></i>
+          <h3 class="faq-title">8. Como o Sistema escolhe as cápsulas e a embalagem de uma fórmula?</h3>
+        </button>
+        <p class="faq-text grey-font">Não só escolhe o tipo de cápsula como também a cor da da mesma e o excipiente
+          ideal de acordo com a substância.
+          <br><br>
+          Calcula ainda a quantidade de excipiente necessário, escolhendo a embalagem e todos os seus componentes, tais
+          como tipo de tampa, etiquetas, desumidificador, desodorisador, algodão, lacre, etc.
+        </p>
+      </div>
+      <hr>
+
+      <div class="faq">
+        <button href="#" class="faq-toggle">
+          <i class="fa-solid fa-caret-right"></i>
+          <h3 class="faq-title">9. O Sistema calcula “quantidade suficiente para” (QSP) cremes e loções e corrige
+            diluições?</h3>
+        </button>
+        <p class="faq-text grey-font">O cálculo da QSP é uma coisa intrínseca no Sistema, não só para cremes e loções,
+          mas para qualquer tipo de veículo ou substância que se fizerem necessários.
+          <br><br>
+          O Sistema VitóriaSoft Farmácia corrige diluições, concentração (grau de pureza), fator de equivalência
+          ácido/base e faz conversão de unidades internacionais (UI) para miligrama.
+        </p>
+      </div>
+      <hr>
+
+      <div class="faq">
+        <button href="#" class="faq-toggle">
+          <i class="fa-solid fa-caret-right"></i>
+          <h3 class="faq-title">10. Como é uma Ficha de Pesagem de uma fórmula?</h3>
+        </button>
+        <p class="faq-text grey-font">Ao se encomendar uma fórmula com o VitóriaSoft Farmácia, todas as etapas de
+          documentos — Protocolo, Rótulo, Ficha de Pesagem, Registros de Consumo etc. — são automaticamente elaboradas
+          pelo Sistema, isto é, ficam registradas e prontas para a impressão.
+          <br><br>
+          A Ficha de Pesagem (produção sob demanda) vem com o nome do paciente, o nome do médico, número do CRM, data,
+          hora e local da encomenda, data e hora e local de entrega. A composição da fórmula traz os nomes dos
+          princípios ativos e seus lotes com a quantidade receitada e a quantidade corrigida de cada um.
+          <br><br>
+          Indica ainda qual a cápsula ou a embalagem, além de todas as informações técnicas e cuidados para a
+          manipulação da fórmula.
+          <br><br>
+          É importante lembrar que a Ficha de Pesagem, assim como qualquer documento gerado pelo VitóriaSoft Farmácia,
+          pode ser editada, configurada e personalizada pelo próprio usuário, fazendo com que os Protocolos, Ficha de
+          Pesagem, Rótulo, Ordem de Produção, Etiquetas de Fracionamento, Etiquetas de Estocagem, Relatórios, Ordem de
+          Compra, Cotação, enfim, todos os documentos reflitam a imagem da empresa.
+        </p>
+      </div>
+      <hr>
+
+      <div class="faq">
+        <button href="#" class="faq-toggle">
+          <i class="fa-solid fa-caret-right"></i>
+          <h3 class="faq-title">11. O Sistema emite os relatórios, mapas, livros e balanços das substâncias e
+            medicamentos de controle especial?</h3>
+        </button>
+        <p class="faq-text grey-font">O Sistema confecciona todos os livros de controle para substâncias psicoativas e
+          outras, assim como todos os balanços e mapas de entrada, saída, transformação e produção, seguindo
+          rigorosamente os modelos da Anvisa.</p>
+      </div>
+      <hr>
+
+      <div class="faq">
+        <button href="#" class="faq-toggle">
+          <i class="fa-solid fa-caret-right"></i>
+          <h3 class="faq-title">12. Quais são os relatórios que o Sistema emite?</h3>
+        </button>
+        <p class="faq-text grey-font">Os relatórios no Sistema VitóriaSoft Farmácia são criados através de um Gerador de
+          Relatórios de última geração.
+          <br><br>
+          Isto quer dizer que o usuário pode emitir qualquer relatório que for necessário, ficando sob seu domínio a
+          edição do modelo, tipo, layout etc.
+        </p>
+      </div>
+      <hr>
+
+      <div class="faq">
+        <button href="#" class="faq-toggle">
+          <i class="fa-solid fa-caret-right"></i>
+          <h3 class="faq-title">13. O Sistema controla malas-diretas para serem enviadas aos médicos e clientes?</h3>
+        </button>
+        <p class="faq-text grey-font">A mala-direta para clientes, fornecedores e médicos pode ser feita por
+          especialidade médica, cidade, bairro, rua, data de aniversário etc.
+          <br><br>
+          O Sistema permite que textos padronizados sejam gravados e impressos juntos com a mala-direta.
+        </p>
+      </div>
+      <hr>
+
+      <div class="faq">
+        <button href="#" class="faq-toggle">
+          <i class="fa-solid fa-caret-right"></i>
+          <h3 class="faq-title">14. O Sistema mostra os produtos não usados?</h3>
+        </button>
+        <p class="faq-text grey-font">O Sistema de relatórios do VitóriaSoft Farmácia emite relatórios de ranking de
+          consumo de substâncias e produtos, assim como o ranking de clientes, mostrando os melhores e os ausentes, por
+          exemplo.
+          <br><br>
+          O Sistema avisa que tipo de etiqueta extra tem que ser usada como, por exemplo, “guardar na geladeira”,
+          “medicamento controlado” etc.
+          <br><br>
+          Todo e qualquer tipo de etiqueta, acessório, embalagem e seus componentes, técnica de manipulação ou cuidados
+          especiais durante o processo pode ser incluído automaticamente na Ficha de Pesagem, mediante prévia
+          configuração do Sistema.
+          <br><br>
+          A Ficha de Pesagem é preparada para ser um roteiro de manipulação, mostrando, substâncias da formulação
+          (princípios ativos e as substâncias adicionais) e indicando seus lotes e as quantidades a serem pesadas,
+          devidamente corrigidas; técnicas e cuidados para a manipulação do produto, inclusive a embalagem e seus
+          componentes; tipo, tamanho e cor da cápsula; etiquetas de advertências; etc.
+        </p>
+      </div>
+      <hr>
+
+      <div class="faq">
+        <button href="#" class="faq-toggle">
+          <i class="fa-solid fa-caret-right"></i>
+          <h3 class="faq-title">15. O Sistema emite relatório informando qual médico enviou mais receitas para a
+            farmácia e qual foi o produto mais vendido?</h3>
+        </button>
+        <p class="faq-text grey-font">Os relatórios podem ser os mais variados possíveis, pois é o usuário mesmo quem os
+          cria de acordo com as informações que desejar.
+          <br><br>
+          Podem ser emitidos relatórios sobre a quantidade de receitas, fórmulas, faturamento por médico ou
+          especialidade, por representante de visitação médica, por loja, por atendente, por substância etc.
+          <br><br>
+          Enfim, pode-se criar o relatório que se fizer necessário.
+        </p>
+      </div>
+      <hr>
+
+      <div class="faq">
+        <button href="#" class="faq-toggle">
+          <i class="fa-solid fa-caret-right"></i>
+          <h3 class="faq-title">16. O Sistema informa quantas fórmulas foram apenas orçadas e não foram mandadas fazer?
+          </h3>
+        </button>
+        <p class="faq-text grey-font">Sim. Ele mostra quantos orçamentos foram confirmados ou não, por atendente, por
+          médico, por loja, por substância, etc.</p>
+      </div>
+      <hr>
+
+      <div class="faq">
+        <button href="#" class="faq-toggle">
+          <i class="fa-solid fa-caret-right"></i>
+          <h3 class="faq-title">17. O Sistema apresenta curva ABC do estoque (estoque máximo e mínimo)?</h3>
+        </button>
+        <p class="faq-text grey-font">O Sistema cria e gerencia a curva ABC de estoque, sugerindo as quantidades que
+          devem ser compradas de matéria-prima ou produto industrializado, levando em consideração a sazonalidade no
+          consumo dos produtos, isto é, indicando quando e quanto devemos comprar de cada produto ou matéria-prima de
+          acordo com a época do ano.</p>
+      </div>
+      <hr>
+
+      <div class="faq">
+        <button href="#" class="faq-toggle">
+          <i class="fa-solid fa-caret-right"></i>
+          <h3 class="faq-title">18. Quando um cliente retorna, posso verificar seu último pedido, qual cor de cápsula
+            que gosta de usar, etc.?</h3>
+        </button>
+        <p class="faq-text grey-font">O VitóriaSoft Farmácia é um Sistema que utiliza banco de dados SQL que permite que
+          todas as informações de movimentos de venda, compra, produção, perda, financeiro etc. fiquem registradas, sem
+          necessidade de limpar os arquivos.
+          <br><br>
+          Todas as informações da empresa estão sempre disponíveis para o acesso imediato.
+          <br><br>
+          A Ficha de Cliente contém todas as informações de compras de medicamentos, atenção farmacêutica etc.
+          <br><br>
+          Isto permite uma rastreabilidade total e perfeita de todos os medicamentos consumidos, suas formulações, qual
+          o médico que receitou, quais os lotes das substâncias utilizadas, quem manipulou, quem encomendou, a data em
+          que encomendou e quando retirou o medicamento da farmácia, qual o valor pago etc.
+        </p>
+      </div>
+      <hr>
+
+      <div class="faq">
+        <button href="#" class="faq-toggle">
+          <i class="fa-solid fa-caret-right"></i>
+          <h3 class="faq-title">19. O Sistema avisa erro de dosagem de receitas médicas, tendo armazenado dosagens
+            mínimas e máximas permitidas?</h3>
+        </button>
+        <p class="faq-text grey-font">O Sistema avisa quando as dosagens mínimas ou máximas são ultrapassadas e que
+          devem ser relatadas ao farmacêutico para as devidas providências.
+          <br><br>
+          As dosagens mínimas e máximas podem ser indicadas também por forma farmacêutica, isto é, cada substância pode
+          ter várias dosagens mínimas e máximas de acordo com o tipo de formulação.
+        </p>
+      </div>
+      <hr>
+
+      <div class="faq">
+        <button href="#" class="faq-toggle">
+          <i class="fa-solid fa-caret-right"></i>
+          <h3 class="faq-title">20. A Ficha de Produção (Ficha de Pesagem) apresenta a fórmula e lembretes, quando
+            necessários, de algumas matéria-primas?
+            Por exemplo: quando registra-se para fazer um creme com hidroquinona, chama atenção para o uso de
+            metabissulfito de sódio?
+            Calcula a quantidade e o preço automaticamente no orçamento, não correndo risco de dar um valor menor do que
+            será usado para produzir?</h3>
+        </button>
+        <p class="faq-text grey-font">Na ficha de cada substância cadastrada no Sistema podemos informar as substâncias
+          adicionais, isto é, substâncias que serão acrescentadas nas formulações para impedir a oxidação, facilitar a
+          manipulação, melhorar o sabor ou o odor, aumentar a absorção etc.
+          <br><br>
+          Elas podem ser acrescentadas de acordo com a forma farmacêutica, ou ainda de acordo com outros princípios
+          ativos que estejam na composição da fórmula.
+          <br><br>
+          Por exemplo: hidroquinona com acido retinóico em loção, usar antioxidante X; hidroquinona com ácido glicólico
+          em loção, usar antioxidante Y.
+          <br><br>
+          No Sistema VitóriaSoft Farmácia, podemos usar vários prazos de validade para uma mesma substância de acordo
+          com a forma farmacêutica da formulação.
+          <br><br>
+          Por exemplo: cetoconazol cápsulas, validade 180 dias; cetoconazol shampoo, validade 60 dias; cetoconazol
+          creme, validade 15 dias.
+          <br><br>
+          Ao calcular os preços das fórmulas, o Sistema leva em consideração sua composição e todas as substâncias
+          adicionais que serão acrescentadas, fazendo suas respectivas correções (concentração, fator de equivalência,
+          diluição, UI por miligrama, marcação ou margem de lucro, taxa do dólar).
+          <br><br>
+          E soma a isto o preço das embalagens, etiquetas, acessórios etc., acrescentando o custo operacional (custo
+          fixo), formando assim o preço final de cada fórmula.
+          <br><br>
+          O Sistema permite ainda uma segunda modalidade de cálculo dos preços das fórmulas através de centros de custos
+          com a indicação do percentual de lucro desejado.
+          <br><br>
+          Faz também o rateio dos valores destes centros, acrescentando o valor das matérias-primas, das embalagens e
+          dos acessórios e o percentual de lucro, formando o preço final da fórmula.
+          <br><br>
+          O Sistema VitóriaSoft Farmácia apresenta para cada preço de fórmula uma planilha de custo, descrevendo o valor
+          da matéria-prima, embalagem, acessórios, o custo operacional fixo ou por centro de custo, e qual o valor do
+          lucro.
+        </p>
+      </div>
+      <hr>
+
+      <div class="faq">
+        <button href="#" class="faq-toggle">
+          <i class="fa-solid fa-caret-right"></i>
+          <h3 class="faq-title">21. Existe ficha de produção para produtos semi-acabados e acabados com produção de
+            lote?</h3>
+        </button>
+        <p class="faq-text grey-font">O Sistema emite Ordem de Produção com lote para todas os itens de estoque que
+          tenham composição padrão (fórmula padrão), permitindo ainda que, na mesma, seja impressa a técnica,
+          observações e cuidados, embalagens, etiquetas e relatórios de produção.
+          <br><br>
+          O Sistema informa ainda os itens de estoque que tenham composição padrão e possam ser produzidos sob demanda.
+          <br><br>
+          Isto é: só serão produzidos quando houver encomenda e a sua fórmula será impressa na ficha de pesagem do
+          medicamento encomendado, proporcional à quantidade receitada.
+          <br><br>
+          Isto é muito útil na preparação de fórmulas com prazo de validade curto ou de composição simples, que é
+          comumente preparada na hora da manipulação — por exemplo: álcool a 50%, pasta d’água —, ou para excipiente de
+          cápsulas que, através destes recursos, poderão ser preparados na hora da manipulação da fórmula.
+        </p>
+      </div>
+      <hr>
+
+      <div class="faq">
+        <button href="#" class="faq-toggle">
+          <i class="fa-solid fa-caret-right"></i>
+          <h3 class="faq-title">22. Caso a farmácia tenha o equipamento apropriado, o Sistema faz leitura óptica de cada
+            matéria-prima sem risco de troca de princípio ativo?</h3>
+        </button>
+        <p class="faq-text grey-font">O VitóriaSoft Farmácia não só lê códigos de barras como também cria os mesmos para
+          Protocolos, Ficha de Pesagem, Ordem de Produção e emite Etiquetas de Fracionamento com essa informação.
+          <br><br>
+          O VitóriaSoft Farmácia está habilitado para a automação completa da farmácia, da frente de loja ao setor do
+          processo (laboratórios), através de microterminais e de leitores de código de barra, fazendo o gerenciamento
+          do tempo de produção em cada estágio de produção, desde a encomenda da fórmula, passando pela triagem,
+          impressão de Fichas de Pesagem, rótulos, pesagens da matéria-prima, manipulação da fórmula, embalagem,
+          conferência e entrega.
+          <br><br>
+          Interligando as balanças e os microterminais ao servidor de rede, propicia a gerência de todo o fluxo
+          produtivo, racionalizando tempo de produção e permitindo a localização, isto é, a identificação do estágio de
+          produção de uma determinada fórmula no fluxo de trabalho da empresa.
+          <br><br>
+          O microterminal substitui o microcomputador nos laboratórios de produção, com a vantagem de custar um terço do
+          valor de um microcomputador, sendo autorizado pela Anvisa para funcionar dentro dos laboratórios por ser
+          blindado e não possuir ventilador interno, não causando assim a contaminação do ambiente por dispersão de pós.
+        </p>
+      </div>
+      <hr>
+
+
+    </div>
+
+  </main>
+
+  <footer class="white-font">
+    <div id="footer-contact-info">
+      <p>VitóriaSoft do Brasil</p>
+      <br>
+      <p>(27) 2121-0045</p>
+      <p>vitoriasoft@vitoriasoft.com.br</p>
+      <p>vendas@vitoriasoft.com.br</p>
+      <br>
+      <p>🇧🇷 Serra – ES</p>
+    </div>
+    <div id="footer-links">
+      <a href="#" target="_blank">Início</a>
+      <a href="#" target="_blank">FAQ</a>
+      <a href="https://instagram.com/vitoriasoftdobrasil" target="_blank">Instagram</a>
+      <a href="#" target="_blank">Mensagem Direta</a>
+      <a href="#" target="_blank">Sobre</a>
+      <a href="https://www.youtube.com/channel/UC2oB3tIlO49pMC_uJxvcb5w" target="_blank">YouTube</a>
       </table>
-    </footer>
+  </footer>
 
-    <script src="scripts.js"></script>
-  </body>
+  <script src="scripts.js"></script>
+</body>
+
 </html>
