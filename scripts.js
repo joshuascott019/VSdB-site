@@ -19,8 +19,6 @@ const mobileNav = document.getElementById('mobile-nav')
 const mobileNavMenu = document.getElementById('mobile-nav-items')
 const mobileMenuBtn = document.getElementById('menu-button')
 
-
-
 const pages = [
   heroEl, 
   novoEl, 
