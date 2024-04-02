@@ -7,6 +7,7 @@ const contatoEl = document.getElementById('contato')
 const sobreEl = document.getElementById("sobre");
 const faqsEl = document.getElementById("faqs");
 const faqToggle = document.querySelectorAll('.faq-toggle')
+const cookieToggle = document.querySelectorAll('.cookie-toggle')
 const flipCard = document.querySelectorAll(".flip");
 const cardBack = document.querySelectorAll(".feat-card-back");
 const cardFront = document.querySelectorAll(".feat-card-front");
@@ -18,6 +19,63 @@ const openChatBtn = document.getElementById('open-chat-button')
 const mobileNav = document.getElementById('mobile-nav')
 const mobileNavMenu = document.getElementById('mobile-nav-items')
 const mobileMenuBtn = document.getElementById('menu-button')
+const reviewConsentBtn = document.getElementById('review-consent-btn')
+const useCookiesAlert = document.getElementById('website-uses-cookies-alert')
+const cookiesLearnMoreBtn = document.getElementById('cookies-learn-more')
+const cookiesPolicyPage = document.getElementById('cookies-policy-page')
+
+const cookiesConfigBtn = document.getElementById('cookies-configure-btn')
+const cookiesAcceptBtn = document.getElementById('cookies-accept-btn')
+
+const cookiesConfigMenu = document.getElementById('cookies-config')
+const cookieSaveAcceptBtn = document.getElementById('cookie-save-accept-btn')
+const cookieShowMoreBtn = document.getElementById('show-more-btn')
+const cookieShowLessBtn = document.getElementById('show-less-btn')
+const cookieTextContinue = document.getElementById('cookie-text-continuation')
+const cookieMoreInfo = document.getElementById('cookie-more-info')
+
+cookiesLearnMoreBtn.addEventListener('click', ()=>{
+  useCookiesAlert.classList.add('hidden')
+  pages.forEach((page)=>{
+    page.classList.remove('hidden')
+    page.classList.add('hidden')
+    cookiesPolicyPage.classList.remove('hidden')
+  })
+})
+
+cookiesConfigBtn.addEventListener('click', ()=>{
+  useCookiesAlert.classList.add('hidden')
+  cookiesConfigMenu.classList.remove('hidden')
+})
+
+cookiesAcceptBtn.addEventListener('click', ()=>{
+  useCookiesAlert.classList.add('hidden')
+  reviewConsentBtn.classList.remove('hidden')
+})
+reviewConsentBtn.addEventListener('click', ()=>{
+  reviewConsentBtn.classList.add('hidden')
+  useCookiesAlert.classList.remove('hidden')
+})
+
+cookieSaveAcceptBtn.addEventListener('click', ()=>{
+  cookiesConfigMenu.classList.add('hidden')
+  reviewConsentBtn.classList.remove('hidden')
+})
+
+
+cookieShowMoreBtn.addEventListener('click', ()=>{
+  cookieTextContinue.classList.add('hidden')
+  cookieShowMoreBtn.classList.add('hidden')
+  cookieMoreInfo.classList.remove('hidden')
+  cookieShowLessBtn.classList.remove('hidden')
+})
+cookieShowLessBtn.addEventListener('click', ()=>{
+  cookieTextContinue.classList.remove('hidden')
+  cookieShowMoreBtn.classList.remove('hidden')
+  cookieMoreInfo.classList.add('hidden')
+  cookieShowLessBtn.classList.add('hidden')
+})
+
 
 const pages = [
   heroEl, 
@@ -25,7 +83,8 @@ const pages = [
   inicioEl, 
   contatoEl, 
   sobreEl, 
-  faqsEl
+  faqsEl,
+  cookiesPolicyPage
 ];
 
 // window.addEventListener('resize', ()=> {
@@ -130,6 +189,21 @@ faqToggle.forEach((toggle)=>{
     }
   })
 })
+
+cookieToggle.forEach((toggle)=>{
+  toggle.addEventListener('click', (e)=>{
+    e.target.parentElement.classList.toggle('active')
+    console.log(e.target.parentElement);
+    // let text = e.target.parentElement.parentElement.children[1]
+    text.classList.toggle('active')
+    if (text.style.maxHeight) {
+      text.style.maxHeight = null;
+    } else {
+      text.style.maxHeight = text.scrollHeight + "px";
+    }
+  })
+})
+
 
 whatsappWidgetBtn.addEventListener('click', ()=>{
   whatsappWidgetBtn.classList.add('active')
