@@ -83,6 +83,9 @@ nav {
   align-items: end;
   padding: 20px;
   margin-bottom: 50px;
+  & img{
+    cursor: pointer;
+  }
 }
 
 #nav-items {

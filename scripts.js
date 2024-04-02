@@ -1,5 +1,6 @@
 const pageBody = document.getElementById('main-body')
 const navItems = document.querySelectorAll(".nav-item");
+const navImage = document.getElementById('nav-img')
 const heroEl = document.getElementById('hero')
 const novoEl = document.getElementById("novo");
 const inicioEl = document.getElementById("inicio");
@@ -23,10 +24,8 @@ const reviewConsentBtn = document.getElementById('review-consent-btn')
 const useCookiesAlert = document.getElementById('website-uses-cookies-alert')
 const cookiesLearnMoreBtn = document.getElementById('cookies-learn-more')
 const cookiesPolicyPage = document.getElementById('cookies-policy-page')
-
 const cookiesConfigBtn = document.getElementById('cookies-configure-btn')
 const cookiesAcceptBtn = document.getElementById('cookies-accept-btn')
-
 const cookiesConfigMenu = document.getElementById('cookies-config')
 const cookieSaveAcceptBtn = document.getElementById('cookie-save-accept-btn')
 const cookieShowMoreBtn = document.getElementById('show-more-btn')
@@ -40,12 +39,14 @@ cookiesLearnMoreBtn.addEventListener('click', ()=>{
     page.classList.remove('hidden')
     page.classList.add('hidden')
     cookiesPolicyPage.classList.remove('hidden')
+    reviewConsentBtn.classList.remove('hidden')
   })
 })
 
 cookiesConfigBtn.addEventListener('click', ()=>{
   useCookiesAlert.classList.add('hidden')
   cookiesConfigMenu.classList.remove('hidden')
+  pageBody.classList.add('lock-scroll')
 })
 
 cookiesAcceptBtn.addEventListener('click', ()=>{
@@ -60,6 +61,7 @@ reviewConsentBtn.addEventListener('click', ()=>{
 cookieSaveAcceptBtn.addEventListener('click', ()=>{
   cookiesConfigMenu.classList.add('hidden')
   reviewConsentBtn.classList.remove('hidden')
+  pageBody.classList.remove('lock-scroll')
 })
 
 
@@ -87,6 +89,9 @@ const pages = [
   cookiesPolicyPage
 ];
 
+// ====================================================================||
+// SEE IF CAN CHANGE TO RELOAD ELEMENT ONLY INSTEAD OF PAGE!!!!!!!!!!!!||
+// ====================================================================||
 // window.addEventListener('resize', ()=> {
 //   const windowWidth = window.innerWidth
 //   // console.log(windowWidth);
