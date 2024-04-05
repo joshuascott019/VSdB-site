@@ -33,7 +33,6 @@ const cookieShowMoreBtn = document.getElementById('show-more-btn');
 const cookieShowLessBtn = document.getElementById('show-less-btn');
 const cookieTextContinue = document.getElementById('cookie-text-continuation');
 const cookieMoreInfo = document.getElementById('cookie-more-info');
-
 const accordionCookieOptions = document.querySelectorAll('.accordion');
 
 accordionCookieOptions.forEach((item) => {
@@ -137,6 +136,20 @@ flipCard.forEach((card) => {
   card.addEventListener('mouseleave', () => {
     card.firstElementChild.style.display = 'none';
   });
+});
+
+navImage.addEventListener('click', () => {
+  pages.forEach((page) => page.classList.add('hidden'));
+  navItems.forEach((item) => item.classList.remove('active'));
+  heroEl.classList.remove('hidden');
+  inicioEl.classList.remove('hidden');
+  e.target.classList.add('active');
+  if (mobileMenuBtn.classList.value === 'active') {
+    mobileNav.classList.remove('active');
+    mobileNavMenu.classList.remove('active');
+    mobileMenuBtn.classList.remove('active');
+    pageBody.classList.remove('lock-scroll');
+  }
 });
 
 navItems.forEach((item) => {
