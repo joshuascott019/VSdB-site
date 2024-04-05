@@ -61,36 +61,32 @@ switchBtns.forEach((btn) => {
 });
 
 cookiesLearnMoreBtn.addEventListener('click', () => {
-  useCookiesAlert.classList.add('hidden');
+  useCookiesAlert.classList.add('hide');
   pages.forEach((page) => {
     page.classList.remove('hidden');
     page.classList.add('hidden');
     cookiesPolicyPage.classList.remove('hidden');
-    reviewConsentBtn.classList.remove('hidden');
+    reviewConsentBtn.classList.remove('hide');
   });
 });
-
 cookiesConfigBtn.addEventListener('click', () => {
-  useCookiesAlert.classList.add('hidden');
-  cookiesConfigMenu.classList.remove('hidden');
+  useCookiesAlert.classList.add('hide');
+  cookiesConfigMenu.classList.remove('hide');
   pageBody.classList.add('lock-scroll');
 });
-
 cookiesAcceptBtn.addEventListener('click', () => {
-  useCookiesAlert.classList.add('hidden');
-  reviewConsentBtn.classList.remove('hidden');
+  useCookiesAlert.classList.add('hide');
+  reviewConsentBtn.classList.remove('hide');
 });
 reviewConsentBtn.addEventListener('click', () => {
-  reviewConsentBtn.classList.add('hidden');
-  useCookiesAlert.classList.remove('hidden');
+  reviewConsentBtn.classList.add('hide');
+  useCookiesAlert.classList.remove('hide');
 });
-
 cookieSaveAcceptBtn.addEventListener('click', () => {
-  cookiesConfigMenu.classList.add('hidden');
-  reviewConsentBtn.classList.remove('hidden');
+  cookiesConfigMenu.classList.add('hide');
+  reviewConsentBtn.classList.remove('hide');
   pageBody.classList.remove('lock-scroll');
 });
-
 cookieShowMoreBtn.addEventListener('click', () => {
   cookieTextContinue.classList.add('hidden');
   cookieShowMoreBtn.classList.add('hidden');
@@ -116,7 +112,7 @@ const pages = [
 
 /* NOTE: This was to fix an obscure, non-breaking bug when resizing window 
 between different breakpoints where the nav item highlight and mobile menu 
-won't update to resizing */
+won't update to resizing. Considered optional fix, but aiming to do such */
 // ====================================================================||
 // SEE IF CAN CHANGE TO RELOAD ELEMENT ONLY INSTEAD OF PAGE!!!!!!!!!!!!||
 // ====================================================================||

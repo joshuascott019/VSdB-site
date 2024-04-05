@@ -408,8 +408,13 @@ nav {
   padding: 10px 12px;
   background-color: white;
   cursor: pointer;
+  z-index: 1;
+  transition: all 0.4s linear;
   & p {
     font-size: 0.8rem;
+  }
+  &.hide {
+    bottom: -50px;
   }
 }
 #website-uses-cookies-alert {
@@ -419,6 +424,10 @@ nav {
   background-color: #fff;
   box-shadow: 2px 2px 10px 10px rgba(0, 0, 0, 0.1);
   padding: 30px;
+  transition: all 0.4s linear;
+  &.hide {
+    bottom: -200px;
+  }
   & a {
     font-weight: 400;
     text-decoration: underline;
@@ -448,6 +457,14 @@ nav {
     }
   }
 }
+@keyframes show-config-menu {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 #cookies-config {
   position: fixed;
@@ -457,6 +474,12 @@ nav {
   height: 100vh;
   overflow: hidden;
   background-color: rgba(0, 0, 0, 0.5);
+  transition: all 0.2s linear;
+  animation: show-config-menu 0.4s;
+  animation-fill-mode: forwards;
+  &.hide {
+    display: none;
+  }
   & #cookies-config-menu {
     position: absolute;
     top: 50%;
