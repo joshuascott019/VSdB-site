@@ -1129,6 +1129,9 @@ footer {
   #sobre-img {
     display: none;
   }
+  #review-consent-btn {
+    display: none;
+  }
 
   /* INICIO Page */
   .container-feat-cards-span {
@@ -1173,6 +1176,9 @@ footer {
     display: none;
   }
   #sobre-img {
+    display: none;
+  }
+  #review-consent-btn {
     display: none;
   }
 
@@ -1298,6 +1304,9 @@ footer {
     display: none;
   }
   #sobre-img {
+    display: none;
+  }
+  #review-consent-btn {
     display: none;
   }
   /* Inicio Page */
