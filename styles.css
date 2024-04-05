@@ -427,7 +427,7 @@ nav {
   z-index: 10;
   transition: all 0.4s linear;
   &.hide {
-    bottom: -200px;
+    bottom: -400px;
   }
   & a {
     font-weight: 400;
@@ -1074,21 +1074,19 @@ footer {
 }
 
 /* NICHE SETTINGS */
-@media (max-width: 1500px) {
+@media (max-width: 1400px) {
   #hero-img {
-    width: 0;
-    & img {
-      height: 500px;
-      opacity: 0.5;
-    }
+    display: none;
   }
   #hero-info {
     width: 100%;
   }
-}
-@media (max-width: 1350px) {
-  #hero-img img {
-    opacity: 0.2;
+  #contact-img {
+    display: none;
+  }
+  #contact-form {
+    width: 70%;
+    margin: 0 auto 150px;
   }
 }
 
@@ -1096,6 +1094,15 @@ footer {
 @media (min-width: 1201px) {
   #mobile-nav {
     display: none;
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 1500px) {
+  #hero-title {
+    font-size: 2.5rem;
+  }
+  #hero-text {
+    font-size: 1.3rem;
   }
 }
 
