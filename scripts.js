@@ -1,5 +1,6 @@
 const pageBody = document.getElementById('main-body');
 const navItems = document.querySelectorAll('.nav-item');
+const footerLinks = document.querySelectorAll('.footer-link');
 const navImage = document.getElementById('nav-img');
 const heroEl = document.getElementById('hero');
 const novoEl = document.getElementById('novo');
@@ -46,13 +47,6 @@ accordionCookieOptions.forEach((item) => {
     }
   });
 });
-
-// const switchBtns = document.querySelectorAll('.switch');
-// switchBtns.forEach((btn) => {
-//   btn.addEventListener('click', function () {
-//     console.log(this.children[0].checked);
-//   });
-// });
 
 const switchBtns = document.querySelectorAll('.cookie-toggle');
 switchBtns.forEach((btn) => {
@@ -121,6 +115,9 @@ const pages = [
   cookiesPolicyPage,
 ];
 
+/* NOTE: This was to fix an obscure, non-breaking bug when resizing window 
+between different breakpoints where the nav item highlight and mobile menu 
+won't update to resizing */
 // ====================================================================||
 // SEE IF CAN CHANGE TO RELOAD ELEMENT ONLY INSTEAD OF PAGE!!!!!!!!!!!!||
 // ====================================================================||
@@ -144,7 +141,7 @@ flipCard.forEach((card) => {
 
 navItems.forEach((item) => {
   item.addEventListener('click', (e) => {
-    // console.log(e.target.innerText);
+    console.log(e.target.innerText);
     switch (e.target.innerText) {
       case 'novo':
         pages.forEach((page) => page.classList.add('hidden'));
@@ -184,6 +181,65 @@ navItems.forEach((item) => {
         }
         break;
       case 'sobre':
+        pages.forEach((page) => page.classList.add('hidden'));
+        navItems.forEach((item) => item.classList.remove('active'));
+        sobreEl.classList.remove('hidden');
+        e.target.classList.add('active');
+        if (mobileMenuBtn.classList.value === 'active') {
+          mobileNav.classList.remove('active');
+          mobileNavMenu.classList.remove('active');
+          mobileMenuBtn.classList.remove('active');
+          pageBody.classList.remove('lock-scroll');
+        }
+        break;
+      case 'FAQ':
+        pages.forEach((page) => page.classList.add('hidden'));
+        navItems.forEach((item) => item.classList.remove('active'));
+        faqsEl.classList.remove('hidden');
+        e.target.classList.add('active');
+        if (mobileMenuBtn.classList.value === 'active') {
+          mobileNav.classList.remove('active');
+          mobileNavMenu.classList.remove('active');
+          mobileMenuBtn.classList.remove('active');
+          pageBody.classList.remove('lock-scroll');
+        }
+        break;
+      default:
+        console.log('ERROR');
+    }
+  });
+});
+
+footerLinks.forEach((item) => {
+  item.addEventListener('click', (e) => {
+    console.log(e.target.innerText);
+    switch (e.target.innerText) {
+      case 'Início':
+        pages.forEach((page) => page.classList.add('hidden'));
+        navItems.forEach((item) => item.classList.remove('active'));
+        heroEl.classList.remove('hidden');
+        inicioEl.classList.remove('hidden');
+        e.target.classList.add('active');
+        if (mobileMenuBtn.classList.value === 'active') {
+          mobileNav.classList.remove('active');
+          mobileNavMenu.classList.remove('active');
+          mobileMenuBtn.classList.remove('active');
+          pageBody.classList.remove('lock-scroll');
+        }
+        break;
+      case 'Mensagem Direta':
+        pages.forEach((page) => page.classList.add('hidden'));
+        navItems.forEach((item) => item.classList.remove('active'));
+        contatoEl.classList.remove('hidden');
+        e.target.classList.add('active');
+        if (mobileMenuBtn.classList.value === 'active') {
+          mobileNav.classList.remove('active');
+          mobileNavMenu.classList.remove('active');
+          mobileMenuBtn.classList.remove('active');
+          pageBody.classList.remove('lock-scroll');
+        }
+        break;
+      case 'Sobre':
         pages.forEach((page) => page.classList.add('hidden'));
         navItems.forEach((item) => item.classList.remove('active'));
         sobreEl.classList.remove('hidden');

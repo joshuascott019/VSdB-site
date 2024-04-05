@@ -759,8 +759,8 @@ main.hidden {
     height: 600px;
     max-height: 100%;
     position: absolute;
-    left: 0;
-    bottom: 0;
+    left: 50px;
+    top: 50px;
   }
 }
 
