@@ -9,7 +9,7 @@ html {
 
 body,
 button {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   /* overflow-x: hidden; */
 }
 
@@ -68,7 +68,7 @@ p {
   overflow: hidden;
 }
 
-div.hidden{
+div.hidden {
   display: none;
 }
 
@@ -83,6 +83,9 @@ nav {
   align-items: end;
   padding: 20px;
   margin-bottom: 50px;
+  & img {
+    cursor: pointer;
+  }
 }
 
 #nav-items {
@@ -396,8 +399,8 @@ nav {
     opacity: 1;
   }
 }
-/* COOKIES & POLICY PAGE */
-#review-consent-btn{
+/* ============== COOKIES & POLICY PAGE ============== */
+#review-consent-btn {
   position: fixed;
   bottom: 0;
   right: 100px;
@@ -405,46 +408,253 @@ nav {
   padding: 10px 12px;
   background-color: white;
   cursor: pointer;
-  & p{
-    font-size: .8rem;
+  z-index: 12;
+  transition: all 0.4s linear;
+  & p {
+    font-size: 0.8rem;
+  }
+  &.hide {
+    bottom: -50px;
   }
 }
-#website-uses-cookies-alert{
+#website-uses-cookies-alert {
   position: fixed;
   bottom: 0;
   left: 0;
   background-color: #fff;
-  box-shadow: 2px 2px 10px 10px rgba(0, 0, 0, .1);
+  box-shadow: 2px 2px 10px 10px rgba(0, 0, 0, 0.1);
   padding: 30px;
-  & a{
+  z-index: 10;
+  transition: all 0.4s linear;
+  &.hide {
+    bottom: -400px;
+  }
+  & a {
     font-weight: 400;
     text-decoration: underline;
   }
-  & p, & button{
+  & p,
+  & button {
     margin: 10px 5px;
   }
-  & button{
+  & button {
     border-radius: 0;
     border: 0;
     padding: 8px;
     cursor: pointer;
-    &#cookies-configure-btn{
-      color: rgba(51, 51, 51, .8);
+    &#cookies-configure-btn {
+      color: rgba(51, 51, 51, 0.8);
       background-color: rgba(179, 180, 181, 1);
-      &:hover{
+      &:hover {
         background-color: rgb(152, 152, 153);
       }
     }
-    &#cookies-accept-btn{
+    &#cookies-accept-btn {
       color: #fff;
       background-color: rgba(68, 59, 145, 1);
-      &:hover{
+      &:hover {
         background-color: rgb(49, 43, 107);
       }
     }
   }
 }
+@keyframes show-config-menu {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
+#cookies-config {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: all 0.2s linear;
+  animation: show-config-menu 0.4s;
+  animation-fill-mode: forwards;
+  &.hide {
+    display: none;
+  }
+  & #cookies-config-menu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    width: 550px;
+    height: 600px;
+    padding: 30px;
+    & #scrollable-section {
+      overflow-y: auto;
+      overflow-x: hidden;
+      width: 100%;
+      height: 90%;
+      & h3 {
+        font-weight: 400;
+        margin: 0 0 10px 0;
+      }
+      & p {
+        font-size: 0.9rem;
+        margin: 10px 0;
+      }
+      & a {
+        text-decoration: underline;
+        font-weight: 400;
+        font-size: 0.9rem;
+      }
+      & span.hidden,
+      & p.hidden,
+      & a.hidden {
+        display: none;
+      }
+    }
+
+    .accordion {
+      background-color: #eee;
+      color: #444;
+      cursor: pointer;
+      border-radius: 5px;
+      padding: 5px;
+      width: 98%;
+      text-align: left;
+      border: none;
+      outline: none;
+      transition: 0.4s;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      & i {
+        transition: 0.4s;
+      }
+      & .option-toggle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      &.active {
+        & i {
+          transform: rotate(90deg);
+        }
+      }
+    }
+    .panel {
+      padding: 0 18px;
+      background-color: white;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+      & p {
+        margin: 10px 0;
+      }
+      & table {
+        border-collapse: collapse;
+        margin: 10px 0;
+        & tr {
+          border: 1px solid rgba(0, 0, 0, 0.1);
+        }
+        & td,
+        & th {
+          vertical-align: top;
+          text-align: left;
+          padding: 5px;
+        }
+        & th {
+          background-color: #3a4856;
+          color: #fff;
+          font-weight: 400;
+          font-size: 0.9rem;
+        }
+        & td {
+          background-color: #f7f7f7;
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+  & .cookie-option {
+    margin: 5px 0;
+    &:first-of-type {
+      margin-top: 20px;
+    }
+  }
+}
+/* Switch Sliders */
+.toggle-container {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin: 5px;
+  width: 200px;
+  & .cookie-toggle {
+    visibility: hidden;
+  }
+  & span {
+    margin: 5px 10px;
+  }
+  & .label {
+    background-color: #d0d0d0;
+    border-radius: 50px;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 5px 0;
+    width: 60px;
+    height: 30px;
+    position: relative;
+  }
+  & .ball {
+    background: #fff;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    align-items: center;
+    justify-content: center;
+    animation: slideOff 0.3s linear forwards;
+  }
+}
+.cookie-toggle:checked + .label {
+  background-color: #61a229;
+}
+.cookie-toggle:checked + .label .ball {
+  animation: slideOn 0.3s linear forwards;
+}
+@keyframes slideOn {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(30px);
+  }
+}
+@keyframes slideOff {
+  0% {
+    transform: translateX(30px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+#cookie-save-accept-btn {
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
+  border: 0;
+  background-color: #61a229;
+  color: #fff;
+  padding: 10px;
+  font-size: 1rem;
+  &:hover {
+    background-color: #25d366;
+  }
+}
 
 /* ========================================== */
 /* ============== MAIN SECTION ============== */
@@ -453,39 +663,40 @@ main.hidden {
   display: none;
 }
 /* ================ COOKIES PAGE ================ */
-#cookies-policy-page{
+#cookies-policy-page {
   width: 70%;
   margin: 0 auto;
   padding: 100px 0;
-  & h1{
+  & h1 {
     font-size: 3rem;
   }
-  & h3{
+  & h3 {
     font-size: 1.5rem;
     margin: 50px 0 20px 0;
   }
-  & p{
+  & p {
     width: 60%;
     margin: 0 0 20px 0;
     line-height: 1.5rem;
   }
-  & table{
+  & table {
     width: 70%;
     border-collapse: collapse;
-    & tr{
+    & tr {
       padding: 0;
     }
-    & td, & th{
+    & td,
+    & th {
       border: 1px solid #ccc;
       vertical-align: top;
       text-align: left;
       color: #333;
     }
-    & th{
+    & th {
       padding: 10px;
       background-color: #e2e2e2;
     }
-    & td{
+    & td {
       width: 50%;
       height: 75px;
       padding: 5px 20px 0 5px;
@@ -493,11 +704,10 @@ main.hidden {
       background-color: #f7f7f7;
     }
   }
-  &.hidden{
+  &.hidden {
     display: none;
   }
 }
-
 
 /* ================ NOVO PAGE ================ */
 #novo {
@@ -573,8 +783,8 @@ main.hidden {
     height: 600px;
     max-height: 100%;
     position: absolute;
-    left: 0;
-    bottom: 0;
+    left: 50px;
+    top: 50px;
   }
 }
 
@@ -864,21 +1074,19 @@ footer {
 }
 
 /* NICHE SETTINGS */
-@media (max-width: 1500px) {
+@media (max-width: 1400px) {
   #hero-img {
-    width: 0;
-    & img {
-      height: 500px;
-      opacity: 0.5;
-    }
+    display: none;
   }
   #hero-info {
     width: 100%;
   }
-}
-@media (max-width: 1350px) {
-  #hero-img img {
-    opacity: 0.2;
+  #contact-img {
+    display: none;
+  }
+  #contact-form {
+    width: 70%;
+    margin: 0 auto 150px;
   }
 }
 
@@ -886,6 +1094,15 @@ footer {
 @media (min-width: 1201px) {
   #mobile-nav {
     display: none;
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 1500px) {
+  #hero-title {
+    font-size: 2.5rem;
+  }
+  #hero-text {
+    font-size: 1.3rem;
   }
 }
 
@@ -918,7 +1135,7 @@ footer {
     margin: 0 auto 150px;
   }
   /* Sobre Page */
-  #sobre-text{
+  #sobre-text {
     width: 100%;
   }
 }
@@ -943,6 +1160,9 @@ footer {
   #sobre-img {
     display: none;
   }
+  #review-consent-btn {
+    display: none;
+  }
 
   /* INICIO Page */
   .container-feat-cards-span {
@@ -958,11 +1178,11 @@ footer {
   #novos-bottom-text {
     width: 80%;
   }
-    /* Sobre Page */
-    #sobre-text{
-      width: 100%;
-    }
-  
+  /* Sobre Page */
+  #sobre-text {
+    width: 100%;
+  }
+
   /* FAQ PAge */
   #faq-container {
     width: 100%;
@@ -987,6 +1207,9 @@ footer {
     display: none;
   }
   #sobre-img {
+    display: none;
+  }
+  #review-consent-btn {
     display: none;
   }
 
@@ -1047,17 +1270,17 @@ footer {
   #faq-container {
     width: 100%;
   }
-    /* Sobre Page */
-    #sobre-text{
-      width: 100%;
-      & h1{
-        font-size: 2.5rem;
-      }
-      & p{
-        font-size: 1rem;
-      }
+  /* Sobre Page */
+  #sobre-text {
+    width: 100%;
+    & h1 {
+      font-size: 2.5rem;
     }
-  
+    & p {
+      font-size: 1rem;
+    }
+  }
+
   /* Footer */
   footer {
     flex-wrap: wrap-reverse;
@@ -1112,6 +1335,9 @@ footer {
     display: none;
   }
   #sobre-img {
+    display: none;
+  }
+  #review-consent-btn {
     display: none;
   }
   /* Inicio Page */
@@ -1202,17 +1428,17 @@ footer {
   .faq-toggle h3 {
     font-size: 1rem;
   }
-    /* Sobre Page */
-    #sobre-text{
-      width: 100%;
-      & h1{
-        font-size: 2rem;
-      }
-      & p{
-        font-size: 1rem;
-      }
+  /* Sobre Page */
+  #sobre-text {
+    width: 100%;
+    & h1 {
+      font-size: 2rem;
     }
-  
+    & p {
+      font-size: 1rem;
+    }
+  }
+
   /* Footer */
   footer {
     flex-wrap: wrap-reverse;
